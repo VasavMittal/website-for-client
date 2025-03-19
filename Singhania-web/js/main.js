@@ -25,15 +25,6 @@
         }
     });
     
-    $('#connectTime').clockpicker({
-        autoclose: true,
-        donetext: 'Done',
-        placement: 'bottom',
-        align: 'left',
-        default: 'now',
-        twelvehour: true  // ✅ Enables 12-hour format (AM/PM)
-    });
-    
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");

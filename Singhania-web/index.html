@@ -19,7 +19,6 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clockpicker/0.0.7/bootstrap-clockpicker.min.css">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -756,7 +755,9 @@
                                 <label for="connectTime" class="form-label" style="font-family: 'league spartan', serif; font-size: 18px;">Convenient Time to Connect</label>
                                 <div class="input-group">
                                     <span class="input-group-text bg-light"><i class="bi bi-clock"></i></span>
-                                    <input type="text" class="form-control" id="connectTime" placeholder="Select Time" readonly>
+                                    <select class="form-control" id="connectTime">
+                                        <!-- Options will be added dynamically -->
+                                    </select>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-4">
@@ -1330,20 +1331,7 @@
 
 
 <!-- Scripts at the end of body -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clockpicker/0.0.7/bootstrap-clockpicker.min.js"></script>
-<!-- <script>
-    $(document).ready(function() {
-        $('.clockpicker').clockpicker({
-            placement: 'top', // Open above the input
-            align: 'left',
-            autoclose: true, // Close when a value is selected
-            donetext: 'Done'
-        }).on('change', function(e){
-            // Ensure the value is populated into the input
-            $('#connectTime').val($(this).find('input').val());
-        });
-    });
-</script> -->
+
 <script>
     function getUTMParameters() {
         let urlParams = new URLSearchParams(window.location.search);
@@ -1361,14 +1349,18 @@
         document.getElementById("utm_source").value = sessionStorage.getItem("utm_source") || "direct";
         document.getElementById("utm_medium").value = sessionStorage.getItem("utm_medium") || "none";
         document.getElementById("utm_campaign").value = sessionStorage.getItem("utm_campaign") || "none";
-            $('#connectTime').clockpicker({
-            autoclose: true,
-            donetext: 'Done',
-            placement: 'top',
-            align: 'left',
-            default: 'now',
-            twelvehour: true
-        });
+        let select = document.getElementById("connectTime");
+        let timeIntervals = 15; // 15-minute gap
+        for (let hours = 0; hours < 24; hours++) {
+            for (let minutes = 0; minutes < 60; minutes += timeIntervals) {
+                let ampm = hours < 12 ? "AM" : "PM";
+                let displayHour = hours % 12 || 12; // Convert 24-hour to 12-hour format
+                let displayMinutes = minutes.toString().padStart(2, "0");
+                let timeString = `${displayHour}:${displayMinutes} ${ampm}`;
+                let option = new Option(timeString, timeString);
+                select.appendChild(option);
+            }
+        }
     });
 </script>
 </body>
