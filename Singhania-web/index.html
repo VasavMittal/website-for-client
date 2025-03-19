@@ -62,8 +62,7 @@
             <!-- Optional: Apply Now Button or Links Here -->
         </div>
     </nav>
-    
-    
+       
     
 <!-- Navbar End -->
 
@@ -72,12 +71,12 @@
 
 
    <!-- Hero Section Start -->
-<div class="container-fluid p-0 mb-5">
+   <div class="container-fluid p-0 mb-5">
     <div class="position-relative w-100 h-100" 
          style="
             background: url('img/about.jpg') no-repeat center center;
             background-size: cover;
-            padding: 100px 0;
+            padding: 150px 0; /* Increased height */
             color: #000000;
             overflow: hidden;
             border-bottom-left-radius: 60px;
@@ -86,7 +85,6 @@
             position: relative;
         ">
         
-        <!-- Overlay -->
         <div style="
             content: '';
             position: absolute;
@@ -94,7 +92,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.65); /* Dark overlay with 50% opacity */
+            background: rgba(0, 0, 0, 0.65);
             z-index: 1;
             border-bottom-left-radius: 60px;
             border-bottom-right-radius: 60px;
@@ -103,86 +101,54 @@
         <div class="container position-relative" style="z-index: 2;">
             <div class="row justify-content-start align-items-center flex-wrap">
                 
-                <!-- Logo and Admission Info -->
                 <div class="col-md-12 d-flex align-items-center gap-3 mb-4 fadeIn" 
                      style="
-                        animation-delay: 0.2s; 
-                        flex-wrap: wrap; 
+                        animation-delay: 0.2s;
+                        flex-wrap: wrap;
                         overflow: visible;
                     ">
                     
-                    <!-- Admission Heading -->
                     <h3 class="mb-0 text-center text-md-start" 
                         style="
+                            font-family: 'Chunk Five', serif;
                             letter-spacing: 0.5px; 
                             font-weight: 700; 
-                            font-size: 2.4rem; 
-                            color: #ffffff; /* Changed to white for better contrast */
+                            font-size: 25px; 
+                            color: #ffffff;
                             text-transform: uppercase;
                             flex-shrink: 1;
                             white-space: normal;
                             word-wrap: break-word;
                         ">
                         Admission Open 2025
-                    </h3>
-                    
-                    <!-- Vertical Bar (Hidden on Mobile) -->
-                    <!-- <div class="vertical-bar" 
-                         style="
-                            width: 4px;
-                            height: 40px;
-                            background-color: #ffffff;
-                            align-self: center;
-                            margin-left: 10px;
-                            margin-right: 10px;
-                        "></div> -->
-                    
-                    <!-- University Logo -->
-                    <!-- <img src="https://singhaniauniversity.ac.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-25-at-5.45.22-PM.jpeg" 
-                         alt="University Logo" 
-                         class="university-logo"
-                         style="
-                            height: 70px; 
-                            width: auto;
-                            max-width: 100%; 
-                            min-width: 150px;
-                            object-fit: contain;
-                            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
-                            flex-shrink: 0;
-                        "> -->
+                    </h3>                    
                 </div>
-
-                <!-- Text Section with Background -->
-                <div class="col-12 col-md-10 col-lg-8 fadeIn" 
-                     style="
-                        background-color: rgba(103, 10, 10, 0.1); 
-                        padding: 30px;
-                        border-radius: 20px;
-                        box-shadow: 0 4px 12px rgba(103, 10, 10, 0.1);
-                        backdrop-filter: blur(8px);
-                        animation-delay: 0.4s;
-                    ">
+                
+                <div class="col-12 col-md-10 col-lg-8 fadeIn">
                     <h1 class="fw-bold" 
                         style="
+                            font-family: 'Chunk Five', serif;
                             color: #ffffff; 
-                            font-size: 1.8rem; 
+                            font-size: 18px; 
                             line-height: 1.2;
                         ">
                         B.A. (Hons.) LLB <br>  
-                        <span style="color: #f1f1f1;">5-Year Integrated Program</span>
+                        <span style="
+                            font-family: 'League Spartan', sans-serif;
+                            color: #f1f1f1;">5-Year Integrated Program</span>
                     </h1>
                     <p class="fs-5 mb-4 pb-2" 
                        style="
+                            font-family: 'Poppins', sans-serif;
                             line-height: 1.6; 
                             color: #f1f1f1;
-                            font-size: 1.2rem;
+                            font-size: 14px;
                         ">
                         At India’s Leading School of Law <br>
                         <strong style="color: #ffd700;">BCI Approved</strong> | 
                         <strong style="color: #ffd700;">100% Internship Guarantee</strong>
                     </p>
                     
-                    <!-- CTA Button -->
                     <a href="#" class="btn btn-primary px-4 py-3 rounded-pill" 
                        data-bs-toggle="modal" data-bs-target="#detailsModal"
                        style="
@@ -192,9 +158,8 @@
                             background-color: #831515;
                             color: #ffffff;
                             box-shadow: 0 4px 8px rgba(255, 0, 60, 0.382);
-                            transition: all 0.4s ease;
-                            text-transform: uppercase;
-                            font-size: 1.1rem;
+                            transition: all 0.4s ease;                            
+                            font-size: 18px;
                         "
                        onmouseover="this.style.backgroundColor='#db2e2e';"
                        onmouseout="this.style.backgroundColor='#831515';">
@@ -206,10 +171,7 @@
         
     </div>
 </div>
-<!-- Hero Section End -->
 
-
-<!-- CSS to Hide Vertical Bar on Mobile -->
 <style>
 @media (max-width: 768px) {
     .vertical-bar {
@@ -221,7 +183,8 @@
         margin-top: 10px;
     }
     h3 {
-        font-size: 1.8rem !important; /* Larger but still balanced size */
+        font-family: 'Chunk Five', serif;
+        font-size: 18px !important;
         line-height: 1.2 !important;
         text-align: center !important;
         letter-spacing: 0.5px;
@@ -236,44 +199,128 @@
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5">
-                <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="" style="object-fit: cover;">
-                    </div>
-                </div> -->
+            <div class="row g-5">                
                 <div class="wow fadeInUp" data-wow-delay="0.3s">
-                    <h4 class="section-title bg-white text-start text-primary pe-3">Program Highlights</h4>
+                    <h4 class="section-title bg-white text-start text-primary pe-3" 
+                        style="
+                            font-family: 'Chunk Five', serif;
+                            font-size: 25px;
+                            color: #000000;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        ">
+                        Program Highlights
+                    </h4>
                     <br></br>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-12">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i><strong>Eligibility:</strong> 10+2 with a minimum of 50% marks in the best four subjects.</p>
+                            <p class="mb-0" style="
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 14px;
+                                color: #000000;
+                            ">
+                                <i class="fa fa-arrow-right text-primary me-2"></i>
+                                <strong style="font-family: 'League Spartan', sans-serif; font-size: 18px;">
+                                    Eligibility:
+                                </strong>
+                                10+2 with a minimum of 50% marks in the best four subjects.
+                            </p>
                         </div>
                         <div class="col-12">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i><strong>Duration:</strong> 5 Years</p>
+                            <p class="mb-0" style="
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 14px;
+                                color: #000000;
+                            ">
+                                <i class="fa fa-arrow-right text-primary me-2"></i>
+                                <strong style="font-family: 'League Spartan', sans-serif; font-size: 18px;">
+                                    Duration:
+                                </strong>
+                                5 Years
+                            </p>
                         </div>
                         <div class="col-12">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i><strong>Fees:</strong> ₹30,000 per semester</p>
+                            <p class="mb-0" style="
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 14px;
+                                color: #000000;
+                            ">
+                                <i class="fa fa-arrow-right text-primary me-2"></i>
+                                <strong style="font-family: 'League Spartan', sans-serif; font-size: 18px;">
+                                    Fees:
+                                </strong>
+                                ₹30,000 per semester
+                            </p>
                         </div>
                         <div class="col-12">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i><strong>Recognition:</strong> Approved by the Bar Council of India (BCI)</p>
+                            <p class="mb-0" style="
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 14px;
+                                color: #000000;
+                            ">
+                                <i class="fa fa-arrow-right text-primary me-2"></i>
+                                <strong style="font-family: 'League Spartan', sans-serif; font-size: 18px;">
+                                    Recognition:
+                                </strong>
+                                Approved by the Bar Council of India (BCI)
+                            </p>
                         </div>
                         <div class="col-12">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i><strong>Interdisciplinary Legal Studies:</strong> Integration of law, economics, sociology, and political science.</p>
+                            <p class="mb-0" style="
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 14px;
+                                color: #000000;
+                            ">
+                                <i class="fa fa-arrow-right text-primary me-2"></i>
+                                <strong style="font-family: 'League Spartan', sans-serif; font-size: 18px;">
+                                    Interdisciplinary Legal Studies:
+                                </strong>
+                                Integration of law, economics, sociology, and political science.
+                            </p>
                         </div>
                         <div class="col-12">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i><strong>Hands-on Training:</strong> Moot courts, legal aid camps, corporate internships.</p>
+                            <p class="mb-0" style="
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 14px;
+                                color: #000000;
+                            ">
+                                <i class="fa fa-arrow-right text-primary me-2"></i>
+                                <strong style="font-family: 'League Spartan', sans-serif; font-size: 18px;">
+                                    Hands-on Training:
+                                </strong>
+                                Moot courts, legal aid camps, corporate internships.
+                            </p>
                         </div>
                         <div class="col-12">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i><strong>Career Paths:</strong> Corporate Lawyer, Legal Advisor, Civil Services, Judiciary, Policy Consultant.</p>
+                            <p class="mb-0" style="
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 14px;
+                                color: #000000;
+                            ">
+                                <i class="fa fa-arrow-right text-primary me-2"></i>
+                                <strong style="font-family: 'League Spartan', sans-serif; font-size: 18px;">
+                                    Career Paths:
+                                </strong>
+                                Corporate Lawyer, Legal Advisor, Civil Services, Judiciary, Policy Consultant.
+                            </p>
                         </div>
                     </div>
                     <div class="d-flex justify-content-end p-2">
-                        <a href="" class="btn btn-primary px-4 py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal">
+                        <a href="#" class="btn btn-primary px-4 py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
+                            font-size: 18px;
+                            font-weight: 600;
+                            background-color: #831515;
+                            color: #ffffff;
+                            border-radius: 30px;
+                            box-shadow: 0 4px 8px rgba(255, 0, 60, 0.382);
+                            transition: all 0.4s ease;
+                        "
+                        onmouseover="this.style.backgroundColor='#db2e2e';"
+                        onmouseout="this.style.backgroundColor='#831515';">
                             Apply Now<i class="fa fa-arrow-right ms-2"></i>
                         </a>
-                    </div>               </div>
-                
+                    </div>               
+                </div>
             </div>
         </div>
     </div>
@@ -283,126 +330,140 @@
    
 
     <!-- Service Start -->
-
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h1 class="mb-5" style="color: #670a0a;">Career Opportunities</h1>
-        </div>
-        <style>
-            .service-item {
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-
-            .service-item .p-4 {
-                flex-grow: 1;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-            }
-        </style>
-        
-        <!-- Top Grid -->
-        <div class="row g-4">
-            <!-- Litigation & Advocacy -->
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item text-center pt-3">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-balance-scale text-primary mb-4"></i>
-                        <h5 class="mb-3">Litigation & Advocacy</h5>
-                        <p>Practice in courts, tribunals and corporate legal teams</p>
+    
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-5" style="
+                    font-family: 'Chunk Five', serif;
+                    font-size: 25px;
+                    color: #670a0a;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                ">Career Opportunities</h1>
+            </div>
+            <style>
+                .service-item {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+    
+                .service-item .p-4 {
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                }
+            </style>
+    
+            <!-- Top Grid -->
+            <div class="row g-4">
+                <!-- Litigation & Advocacy -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-balance-scale text-primary mb-4"></i>
+                            <h5 class="mb-3" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Litigation & Advocacy</h5>
+                            <p style="font-family: 'Poppins', sans-serif; font-size: 14px;">Practice in courts, tribunals and corporate legal teams</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Corporate Law -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-building text-primary mb-4"></i>
+                            <h5 class="mb-3" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Corporate Law</h5>
+                            <p style="font-family: 'Poppins', sans-serif; font-size: 14px;">Work in multinational corporations and law firms</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Legal Research & Academia -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-university text-primary mb-4"></i>
+                            <h5 class="mb-3" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Legal Research & Academia</h5>
+                            <p style="font-family: 'Poppins', sans-serif; font-size: 14px;">Higher education, PhD, and teaching opportunities</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Civil Services -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-landmark text-primary mb-4"></i>
+                            <h5 class="mb-3" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Civil Services (UPSC, State PSC)</h5>
+                            <p style="font-family: 'Poppins', sans-serif; font-size: 14px;">Become a Legal Advisor or Policy Consultant</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Corporate Law -->
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="service-item text-center pt-3">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-building text-primary mb-4"></i>
-                        <h5 class="mb-3">Corporate Law</h5>
-                        <p>Work in multinational corporations and law firms</p>
+    
+            <!-- Bottom Grid (Centered) -->
+            <div class="row g-3 justify-content-center mt-2">
+                <!-- Judicial Services -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-gavel text-primary mb-4"></i>
+                            <h5 class="mb-3" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Judicial Services (PCS-J)</h5>
+                            <p style="font-family: 'Poppins', sans-serif; font-size: 14px;">Pathway to becoming a Judge or Magistrate</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Entrepreneurial Growth -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-lightbulb text-primary mb-4"></i>
+                            <h5 class="mb-3" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Entrepreneurial Growth</h5>
+                            <p style="font-family: 'Poppins', sans-serif; font-size: 14px;">Establish independent legal practices or consultancy firms</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Legal Research & Academia -->
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item text-center pt-3">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-university text-primary mb-4"></i>
-                        <h5 class="mb-3">Legal Research & Academia</h5>
-                        <p>Higher education, PhD, and teaching opportunities</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Civil Services -->
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="service-item text-center pt-3">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-landmark text-primary mb-4"></i>
-                        <h5 class="mb-3">Civil Services (UPSC, State PSC)</h5>
-                        <p>Become a Legal Advisor or Policy Consultant</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Grid (Centered) -->
-        <!-- Bottom Grid (Centered) -->
-<div class="row g-3 justify-content-center mt-2"> <!-- Reduced mt-4 to mt-2 and g-4 to g-3 -->
-    <!-- Judicial Services -->
-    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="service-item text-center pt-3">
-            <div class="p-4">
-                <i class="fa fa-3x fa-gavel text-primary mb-4"></i>
-                <h5 class="mb-3">Judicial Services (PCS-J)</h5>
-                <p>Pathway to becoming a Judge or Magistrate</p>
+    
+            <div class="d-flex justify-content-end p-2">
+                <a href="#" class="btn btn-primary px-4 py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
+                    font-size: 18px;
+                            font-weight: 600;
+                            background-color: #831515;
+                            color: #ffffff;
+                            border-radius: 30px;
+                            box-shadow: 0 4px 8px rgba(255, 0, 60, 0.382);
+                            transition: all 0.4s ease;                        
+                "
+                onmouseover="this.style.backgroundColor='#db2e2e';"
+                onmouseout="this.style.backgroundColor='#831515';">
+                    Apply Now<i class="fa fa-arrow-right ms-2"></i>
+                </a>
             </div>
         </div>
     </div>
-
-    <!-- Entrepreneurial Growth -->
-    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-        <div class="service-item text-center pt-3">
-            <div class="p-4">
-                <i class="fa fa-3x fa-lightbulb text-primary mb-4"></i>
-                <h5 class="mb-3">Entrepreneurial Growth</h5>
-                <p>Establish independent legal practices or consultancy firms</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="d-flex justify-content-end p-2">
-    <a href="" class="btn btn-primary px-4 py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal">
-        Apply Now<i class="fa fa-arrow-right ms-2"></i>
-    </a>
-</div>
-
-
-    </div>
-</div>
 <!-- Service End -->
+
 
 
  <!-- Why Choose Us Section Start -->
  <br></br>
  <div class="container py-5">
     <div class="text-center mb-5">
-        <h2 class="fw-bold" 
-            style="
-                color: #670a0a;
-                font-size: 2.5rem;
-                margin-bottom: 15px;
-                text-transform: uppercase;
-                letter-spacing: 0.5px;
-            ">
+        <h2 style="
+            font-family: 'Chunk Five', sans-serif;
+            font-size: 25px;
+            color: #670a0a;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        ">
             Why Choose Us?
         </h2>        
     </div>
@@ -410,17 +471,29 @@
     <div class="row g-4">
         <!-- Card 1 -->
         <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm h-100" 
-                 style="
+            <div class="card border-0 shadow-sm h-100"
+                style="
                     background-color: #fdfaf3;
                     padding: 20px;
                     border-radius: 16px;
                     transition: transform 0.3s ease;
                 "
-                 onmouseover="this.style.transform='translateY(-5px)';"
-                 onmouseout="this.style.transform='translateY(0)';">
-                <h5 class="fw-bold" style="color: #670a0a;">BCI-Approved Law Degrees</h5>
-                <p style="color: #333333; line-height: 1.6;">
+                onmouseover="this.style.transform='translateY(-5px)';"
+                onmouseout="this.style.transform='translateY(0)';">
+                <h5 style="
+                    font-family: 'League Spartan', sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #670a0a;
+                ">
+                    BCI-Approved Law Degrees
+                </h5>
+                <p style="
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 1.6;
+                ">
                     Nationally recognized programs for legal practice.
                 </p>
             </div>
@@ -429,16 +502,28 @@
         <!-- Card 2 -->
         <div class="col-md-6 col-lg-4">
             <div class="card border-0 shadow-sm h-100"
-                 style="
+                style="
                     background-color: #fdfaf3;
                     padding: 20px;
                     border-radius: 16px;
                     transition: transform 0.3s ease;
                 "
-                 onmouseover="this.style.transform='translateY(-5px)';"
-                 onmouseout="this.style.transform='translateY(0)';">
-                <h5 class="fw-bold" style="color: #670a0a;">Singhania Law Firm Partnership</h5>
-                <p style="color: #333333; line-height: 1.6;">
+                onmouseover="this.style.transform='translateY(-5px)';"
+                onmouseout="this.style.transform='translateY(0)';">
+                <h5 style="
+                    font-family: 'League Spartan', sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #670a0a;
+                ">
+                    Singhania Law Firm Partnership
+                </h5>
+                <p style="
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 1.6;
+                ">
                     Hands-on experience at Singhania & Partners and other top firms.
                 </p>
             </div>
@@ -447,16 +532,28 @@
         <!-- Card 3 -->
         <div class="col-md-6 col-lg-4">
             <div class="card border-0 shadow-sm h-100"
-                 style="
+                style="
                     background-color: #fdfaf3;
                     padding: 20px;
                     border-radius: 16px;
                     transition: transform 0.3s ease;
                 "
-                 onmouseover="this.style.transform='translateY(-5px)';"
-                 onmouseout="this.style.transform='translateY(0)';">
-                <h5 class="fw-bold" style="color: #670a0a;">100% Internship Guarantee</h5>
-                <p style="color: #333333; line-height: 1.6;">
+                onmouseover="this.style.transform='translateY(-5px)';"
+                onmouseout="this.style.transform='translateY(0)';">
+                <h5 style="
+                    font-family: 'League Spartan', sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #670a0a;
+                ">
+                    100% Internship Guarantee
+                </h5>
+                <p style="
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 1.6;
+                ">
                     Practical training in corporate law, judiciary, and litigation.
                 </p>
             </div>
@@ -465,16 +562,28 @@
         <!-- Card 4 -->
         <div class="col-md-6 col-lg-4">
             <div class="card border-0 shadow-sm h-100"
-                 style="
+                style="
                     background-color: #fdfaf3;
                     padding: 20px;
                     border-radius: 16px;
                     transition: transform 0.3s ease;
                 "
-                 onmouseover="this.style.transform='translateY(-5px)';"
-                 onmouseout="this.style.transform='translateY(0)';">
-                <h5 class="fw-bold" style="color: #670a0a;">Industry-Integrated Curriculum</h5>
-                <p style="color: #333333; line-height: 1.6;">
+                onmouseover="this.style.transform='translateY(-5px)';"
+                onmouseout="this.style.transform='translateY(0)';">
+                <h5 style="
+                    font-family: 'League Spartan', sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #670a0a;
+                ">
+                    Industry-Integrated Curriculum
+                </h5>
+                <p style="
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 1.6;
+                ">
                     Covering Corporate Law, Criminal Law, Human Rights, and more.
                 </p>
             </div>
@@ -483,16 +592,28 @@
         <!-- Card 5 -->
         <div class="col-md-6 col-lg-4">
             <div class="card border-0 shadow-sm h-100"
-                 style="
+                style="
                     background-color: #fdfaf3;
                     padding: 20px;
                     border-radius: 16px;
                     transition: transform 0.3s ease;
                 "
-                 onmouseover="this.style.transform='translateY(-5px)';"
-                 onmouseout="this.style.transform='translateY(0)';">
-                <h5 class="fw-bold" style="color: #670a0a;">Moot Court & Legal Aid Clinics</h5>
-                <p style="color: #333333; line-height: 1.6;">
+                onmouseover="this.style.transform='translateY(-5px)';"
+                onmouseout="this.style.transform='translateY(0)';">
+                <h5 style="
+                    font-family: 'League Spartan', sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #670a0a;
+                ">
+                    Moot Court & Legal Aid Clinics
+                </h5>
+                <p style="
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 1.6;
+                ">
                     Real-world legal training from day one.
                 </p>
             </div>
@@ -501,63 +622,81 @@
         <!-- Card 6 -->
         <div class="col-md-6 col-lg-4">
             <div class="card border-0 shadow-sm h-100"
-                 style="
+                style="
                     background-color: #fdfaf3;
                     padding: 20px;
                     border-radius: 16px;
                     transition: transform 0.3s ease;
                 "
-                 onmouseover="this.style.transform='translateY(-5px)';"
-                 onmouseout="this.style.transform='translateY(0)';">
-                <h5 class="fw-bold" style="color: #670a0a;">Global Library Access</h5>
-                <p style="color: #333333; line-height: 1.6;">
+                onmouseover="this.style.transform='translateY(-5px)';"
+                onmouseout="this.style.transform='translateY(0)';">
+                <h5 style="
+                    font-family: 'League Spartan', sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #670a0a;
+                ">
+                    Global Library Access
+                </h5>
+                <p style="
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 1.6;
+                ">
                     Resources from British Council, AIU, and the American Library Association.
                 </p>
             </div>
         </div>
 
-        <!-- Card 7 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- Centered Last Card -->
+        <div class="col-md-6 col-lg-4 mx-auto">
             <div class="card border-0 shadow-sm h-100"
-                 style="
+                style="
                     background-color: #fdfaf3;
                     padding: 20px;
                     border-radius: 16px;
                     transition: transform 0.3s ease;
                 "
-                 onmouseover="this.style.transform='translateY(-5px)';"
-                 onmouseout="this.style.transform='translateY(0)';">
-                <h5 class="fw-bold" style="color: #670a0a;">Scholarships & Financial Aid</h5>
-                <p style="color: #333333; line-height: 1.6;">
+                onmouseover="this.style.transform='translateY(-5px)';"
+                onmouseout="this.style.transform='translateY(0)';">
+                <h5 style="
+                    font-family: 'League Spartan', sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #670a0a;
+                ">
+                    Scholarships & Financial Aid
+                </h5>
+                <p style="
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 1.6;
+                ">
                     Making legal education accessible to all.
                 </p>
             </div>
         </div>
+    </div>
 
-        <!-- Card 8 -->
-        <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm h-100"
-                 style="
-                    background-color: #fdfaf3;
-                    padding: 20px;
-                    border-radius: 16px;
-                    transition: transform 0.3s ease;
-                "
-                 onmouseover="this.style.transform='translateY(-5px)';"
-                 onmouseout="this.style.transform='translateY(0)';">
-                <h5 class="fw-bold" style="color: #670a0a;">On-Campus Hostel & Mess</h5>
-                <p style="color: #333333; line-height: 1.6;">
-                    Safe & comfortable residential facilities.
-                </p>
-            </div>
-        </div>
-        <div class="d-flex justify-content-end p-2">
-            <a href="" class="btn btn-primary px-4 py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                Apply Now<i class="fa fa-arrow-right ms-2"></i>
-            </a>
-        </div>
+    <div class="d-flex justify-content-end p-2">
+        <a href="#" class="btn btn-primary px-4 py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
+            font-size: 18px;
+                    font-weight: 600;
+                    background-color: #831515;
+                    color: #ffffff;
+                    border-radius: 30px;
+                    box-shadow: 0 4px 8px rgba(255, 0, 60, 0.382);
+                    transition: all 0.4s ease;                        
+        "
+        onmouseover="this.style.backgroundColor='#db2e2e';"
+        onmouseout="this.style.backgroundColor='#831515';">
+            Apply Now<i class="fa fa-arrow-right ms-2"></i>
+        </a>
     </div>
 </div>
+
 <!-- Why Choose Us Section End -->
 
 
@@ -629,10 +768,17 @@
     </div>
 </div>
     
+
+
+
 <!-- Facilities Start -->    
 
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Chunk+Five&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
     /* Reset margin and padding to prevent unwanted gaps */
     * {
         margin: 0;
@@ -641,7 +787,7 @@
     }
 
     body, html {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-x: hidden;
     }
 
     .overlay-container {
@@ -685,29 +831,39 @@
 
     .overlay-item {
         display: flex;
-        align-items: flex-start; /* ✅ Align icons with the top of the text */
+        align-items: flex-start;
         gap: 12px;
     }
 
     .overlay-item i {
         font-size: 26px;
         color: #831515;
-        line-height: 1; /* ✅ Fix vertical alignment */
-        margin-top: 2px; /* ✅ Fine-tuning alignment with text */
+        line-height: 1;
+        margin-top: 2px;
     }
 
     .overlay-item p {
         margin: 0;
-        font-size: 18px;
-        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
     }
 
-    /* Fix alignment of section title */
+    .overlay-item strong {
+        font-family: 'League Spartan', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #670a0a;
+    }
+
     .section-title {
         display: inline-block;
         margin-bottom: 10px;
-        font-size: 24px;
-        font-weight: bold;
+        font-family: 'Chunk Five', serif;
+        font-size: 25px;
+        font-weight: 700;
+        color: #670a0a;
     }
 
     .custom-container {
@@ -719,7 +875,6 @@
         text-align: center;
     }
 
-    /* 📱 MOBILE VIEW (iPhone 12 Pro + smaller screens) */
     @media (max-width: 768px) {
         .overlay-container {
             height: auto;
@@ -749,20 +904,15 @@
             gap: 16px;
         }
 
-        .overlay-item {
-            align-items: flex-start; /* ✅ Align icons with the top of the text */
-            gap: 12px;
-        }
-
         .overlay-item i {
             font-size: 22px;
-            margin-top: 2px; /* ✅ Keep alignment clean */
+            margin-top: 2px;
             line-height: 1;
         }
 
         .overlay-item p {
-            font-size: 16px;
-            line-height: 1.4;
+            font-size: 14px;
+            line-height: 1.5;
         }
 
         .section-title {
@@ -772,17 +922,17 @@
     }
 </style>
 
-<br>
+
+<br></br>
 <div class="container-fluid py-5 custom-container">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
         <h4 class="section-title bg-white text-primary px-3">Campus Facilities</h4>
         <br></br>
     </div>
+    
     <div class="overlay-container">
-        <!-- Image directly in the container -->
         <img src="img/cat-4enhanced.png" alt="Campus Image" class="overlay-image">
 
-        <!-- Text split into two columns -->
         <div class="overlay-content">
             <!-- Left Column -->
             <div class="overlay-column">
@@ -795,6 +945,7 @@
                     <p><strong>Global Library Access:</strong> Resources from British Council, AIU, and American Library Association.</p>
                 </div>
             </div>
+
             <!-- Right Column -->
             <div class="overlay-column">
                 <div class="overlay-item">
@@ -809,37 +960,111 @@
         </div>
     </div>
 </div>
-
-
     
 <!-- Facilities End -->    
 
+
+
 <!-- Available Scholarships Section Start -->
 <br></br>
-<div class="container py-5">
-    <h2 class="text-center mb-4" style="
-        font-size: 2.2rem;
+<style>
+    /* Typography Settings */
+    @import url('https://fonts.googleapis.com/css2?family=Chunk+Five&family=League+Spartan:wght@400;600&family=Poppins:wght@400;600&display=swap');
+
+    /* General Styling */
+    .container {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Heading 1 */
+    .main-heading {
+        font-family: 'Chunk Five', serif;
+        font-size: 25px;
         font-weight: 700;
         color: #670a0a;
         text-transform: uppercase;
         letter-spacing: 1px;
-    ">
-        Available Scholarships
-    </h2>
-    
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Heading 2 */
+    .scholarship-title {
+        font-family: 'League Spartan', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    /* Body Text */
+    .scholarship-text,
+    .note {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: #333333;
+        line-height: 1.6;
+    }
+
+    /* Scholarship Box Styling */
+    .scholarship-box {
+        padding: 30px;
+        border-left: 6px solid;
+        background-color: #fdfaf3;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+    }
+
+    .scholarship-box:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Scholarship Color Variants */
+    .merit-based {
+        border-color: #670a0a;
+        background-color: #fdfaf3;
+    }
+
+    .sports-excellence {
+        border-color: #004a99;
+        background-color: #f0f6ff;
+    }
+
+    .women-empowerment {
+        border-color: #cc3366;
+        background-color: #fff0f5;
+    }
+
+    .dc-singhania {
+        border-color: #006400;
+        background-color: #f3fff3;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+        .main-heading {
+            font-size: 22px;
+        }
+        .scholarship-title {
+            font-size: 16px;
+        }
+        .scholarship-text,
+        .note {
+            font-size: 12px;
+        }
+    }
+</style>
+
+<div class="container py-5">
+    <h2 class="main-heading">Available Scholarships</h2>
+
     <div class="row justify-content-center">
         <!-- Merit-Based Scholarships -->
         <div class="col-md-5 mb-4">
-            <div style="
-                padding: 30px;
-                border-left: 6px solid #670a0a;
-                background-color: #fdfaf3;
-                border-radius: 12px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-                transition: transform 0.3s ease;
-            " onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0)';">
-                <h4 style="color: #670a0a; font-weight: 600; font-size: 1.5rem; margin-bottom: 10px;">Merit-Based Scholarships</h4>
-                <ul style="padding-left: 20px; margin-bottom: 0; line-height: 1.6; color: #333333;">
+            <div class="scholarship-box merit-based">
+                <h4 class="scholarship-title">Merit-Based Scholarships</h4>
+                <ul class="scholarship-text">
                     <li>50% tuition fee waiver for students scoring 75% & above in 10+2.</li>
                     <li>25% tuition fee waiver for students scoring 60%-74% in 10+2.</li>
                 </ul>
@@ -848,16 +1073,9 @@
 
         <!-- Sports Excellence Scholarships -->
         <div class="col-md-5 mb-4">
-            <div style="
-                padding: 30px;
-                border-left: 6px solid #004a99;
-                background-color: #f0f6ff;
-                border-radius: 12px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-                transition: transform 0.3s ease;
-            " onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0)';">
-                <h4 style="color: #004a99; font-weight: 600; font-size: 1.5rem; margin-bottom: 10px;">Sports Excellence Scholarships</h4>
-                <ul style="padding-left: 20px; margin-bottom: 0; line-height: 1.6; color: #333333;">
+            <div class="scholarship-box sports-excellence">
+                <h4 class="scholarship-title">Sports Excellence Scholarships</h4>
+                <ul class="scholarship-text">
                     <li>100% Scholarship for National/International medalists.</li>
                     <li>70% Scholarship for State-level medalists.</li>
                     <li>30% Scholarship for District-level medalists.</li>
@@ -867,16 +1085,9 @@
 
         <!-- Women Empowerment Scholarships -->
         <div class="col-md-5 mb-4">
-            <div style="
-                padding: 30px;
-                border-left: 6px solid #cc3366;
-                background-color: #fff0f5;
-                border-radius: 12px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-                transition: transform 0.3s ease;
-            " onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0)';">
-                <h4 style="color: #cc3366; font-weight: 600; font-size: 1.5rem; margin-bottom: 10px;">Women Empowerment Scholarships</h4>
-                <p style="margin-bottom: 0; line-height: 1.6; color: #333333;">
+            <div class="scholarship-box women-empowerment">
+                <h4 class="scholarship-title">Women Empowerment Scholarships</h4>
+                <p class="scholarship-text">
                     35% fee concession for female students enrolling in 2024-25.
                 </p>
             </div>
@@ -884,362 +1095,167 @@
 
         <!-- D.C. Singhania Memorial Scholarship -->
         <div class="col-md-5 mb-4">
-            <div style="
-                padding: 30px;
-                border-left: 6px solid #006400;
-                background-color: #f3fff3;
-                border-radius: 12px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-                transition: transform 0.3s ease;
-            " onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0)';">
-                <h4 style="color: #006400; font-weight: 600; font-size: 1.5rem; margin-bottom: 10px;">D.C. Singhania Memorial Scholarship</h4>
-                <p style="margin-bottom: 0; line-height: 1.6; color: #333333;">
+            <div class="scholarship-box dc-singhania">
+                <h4 class="scholarship-title">D.C. Singhania Memorial Scholarship</h4>
+                <p class="scholarship-text">
                     Scholarships for students excelling in academics, sports, and social service.
                 </p>
             </div>
         </div>
     </div>
 
-    <p class="text-center mt-4" style="color: #555555; font-size: 1rem;">
+    <p class="note text-center mt-4">
         <em>Note: Scholarships for undergraduate students apply for Year 1 and are renewable based on academic performance.</em>
     </p>
 </div>
+
 <!-- Available Scholarships Section End -->
-    <!-- Courses Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
-                <h1 class="mb-5">Popular Courses</h1>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-3.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Courses End -->
+    
 
     <!-- About Start -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chunk+Five&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    
+        h1, h2 {
+            font-family: 'Chunk Five', sans-serif;
+        }
+    
+        h1 {
+            font-size: 25px;
+        }
+    
+        h2 {
+            font-size: 18px;
+        }
+    
+        .sub-heading {
+            font-family: 'League Spartan', sans-serif;
+            font-size: 18px;
+        }
+    
+        p, strong {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+        }
+    </style>
+    <br></br>
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h4 class="section-title bg-white text-start text-primary pe-3">About Us</h4>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">About Us</h2>
                     <br></br>
-                    <!-- <h1 class="mb-4">Welcome to eLEARNING</h1> -->
                     <p class="mb-4">Singhania University’s School of Law is built on
                         the legacy of Dr. D.C. Singhania, a legal
                         luminary, and Mr. Ravi Singhania, a leading
-                        corporate lawyer. Backed by Singhania &
+                        corporate lawyer. Backed by Singhania &amp;
                         Partners, one of India’s top law firms, our law
                         programs integrate academic excellence with
-                        real-world legal practice.</p> 
+                        real-world legal practice.
+                    </p> 
                     <p class="mb-4"><strong>A Green Campus for Focused Learning:</strong> 
                        Located in Rajasthan, away from distractions,
-                        ideal for legal research and development.</p> 
-                        
+                        ideal for legal research and development.
+                    </p> 
+                    
                     <p class="mb-4"><strong>Singhania Law Firm Partnership:</strong> Hands
-                       on experience at Singhania & Partners and
-                        other top law firms.</p> 
+                       on experience at Singhania &amp; Partners and
+                        other top law firms.
+                    </p> 
                     
                     <p class="mb-4"><strong>100% Internship Guarantee:</strong> Ensuring
                         practical legal training in corporate law,
-                        judiciary, and litigation.</p>                    
-                    <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
+                        judiciary, and litigation.
+                    </p>                    
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="img-fluid position-absolute w-100 h-100" src="img/aboutus_resized.png" alt="" style="object-fit: cover;">
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
+    
     <!-- About End -->
-
-
-    <!-- Team Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
-                <h1 class="mb-5">Expert Instructors</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="mb-5">Our Students Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Testimonial End -->
+       
         
 
     <!-- Footer Start -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chunk+Five&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    
+        h1, h2, h4 {
+            font-family: 'Chunk Five', serif;
+        }
+    
+        h1 {
+            font-size: 25px;
+        }
+    
+        h2, h4 {
+            font-size: 18px;
+        }
+    
+        p, a, strong {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+        }
+    
+        .btn-primary {
+            font-size: 14px;
+            font-weight: 600;
+            background-color: #831515;
+            color: #ffffff;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(255, 0, 60, 0.382);
+            transition: all 0.4s ease;
+        }
+    
+        .btn-primary:hover {
+            background-color: #db2e2e;
+        }
+    
+        .apply-link {
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 14px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+    
+        .apply-link:hover {
+            color: #831515 !important;
+        }
+    </style>
+    
     <div class="container-fluid bg-dark text-light footer pt-1 mt-1 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">FAQs & Help</a>
-                </div> -->
                 <div class="col-lg-6 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Singhania University, Pacheri Bari, Jhunjhunu - 333515, Rajasthan, India</p>                    
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>admissions@singhaniauniversity.com</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9355168880</p>
-                    <!-- <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div> -->
-                </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Gallery</h4>
-                    <div class="row g-2 pt-2">
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Apply Now</h4>
-                    <p class="apply-link" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                        Apply Form
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        Singhania University, Pacheri Bari, Jhunjhunu - 333515, Rajasthan, India
                     </p>
-                    <style>
-                        /* Higher specificity to override Bootstrap styles */
-                        p.apply-link {
-                            color: #ffffff;
-                            cursor: pointer;
-                            font-size: 18px;
-                            display: inline-block;
-                            transition: color 0.3s ease;
-                        }
-                    
-                        p.apply-link:hover {
-                            color: #831515 !important; /* Force hover color */
-                        }
-                    </style>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        admissions@singhaniauniversity.com
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        +91 9355168880
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Admission Open</h4>
+                    <a href="#" class="btn btn-primary px-3 py-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal">
+                        Apply Now<i class="fa fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1249,18 +1265,11 @@
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy; <a class="border-bottom" href="#">Singhania University</a>, All Right Reserved.
                     </div>
-                    <!-- <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
     </div>
+    
     <!-- Footer End -->
 
 
