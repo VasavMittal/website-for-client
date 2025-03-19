@@ -1350,6 +1350,8 @@
         document.getElementById("utm_medium").value = sessionStorage.getItem("utm_medium") || "none";
         document.getElementById("utm_campaign").value = sessionStorage.getItem("utm_campaign") || "none";
         let select = document.getElementById("connectTime");
+        let option = new Option("--:--", "");
+        select.appendChild(option);
         let timeIntervals = 15; // 15-minute gap
         for (let hours = 0; hours < 24; hours++) {
             for (let minutes = 0; minutes < 60; minutes += timeIntervals) {
