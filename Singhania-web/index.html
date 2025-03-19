@@ -607,10 +607,16 @@
         }
     
         .overlay-image {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            filter: brightness(0.5); /* Darken the image for better text visibility */
+            background: url('img/cat-4.jpeg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed; /* This makes the background fixed */
+            filter: brightness(0.5); /* Darkens image for better text visibility */
+            z-index: -1; /* Places it behind content */
         }
     
         .overlay-content {
@@ -625,6 +631,7 @@
             border-radius: 8px;
             width: 90%; /* Adjust width as needed */
             max-width: 600px;
+            z-index: 1;
         }
     
         .overlay-item {
@@ -665,7 +672,7 @@
                 <br></br>
             </div>
             <div class="overlay-container">
-                <img class="overlay-image" src="img/cat-4.jpeg" alt="Campus Facilities">
+                <div class="overlay-image"></div>
                 <div class="overlay-content">
                     <div class="overlay-item">
                         <i class="fa fa-building"></i>
@@ -1141,43 +1148,6 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-   <!--  <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const scriptURL = "https://script.google.com/macros/s/AKfycbxQ1DGPgonB92uhIip-mNNO42XtBBjLPp_aJt14DqjzAZSwnjtQUr8jI4uTg5p1VfCpwA/exec"; // Replace with new URL
-    
-            document.getElementById("submitForm").addEventListener("click", function (event) {
-                event.preventDefault();
-    
-                let formData = new URLSearchParams();
-                formData.append("Full Name", document.getElementById("fullName").value);
-                formData.append("WhatsApp Number", document.getElementById("whatsappNumber").value);
-                formData.append("Email ID", document.getElementById("email").value);
-                formData.append("City of Residence", document.getElementById("city").value);
-                formData.append("Convenient Time to Connect", document.getElementById("connectTime").value);
-    
-                fetch(scriptURL, {
-                    method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: formData.toString()
-                })
-                .then(response => response.json()) // Ensure JSON response
-                .then(data => {
-                    if (data.result === "success") {
-                        swal("Done", "Submitted Successfully.", "success");
-                        document.querySelector("#detailsModal form").reset(); // Reset form after submission
-                        $("#detailsModal").modal("hide"); // Hide modal after success
-                    } else {
-                        swal("Error", "Something went wrong. Please try again!", "error");
-                        console.error("Google Script Error:", data.error);
-                    }
-                })
-                .catch(error => {
-                    swal("Error", "Something went wrong. Please try again!", "error");
-                    console.error("Fetch Error:", error);
-                });
-            });
-        });
-    </script> -->
     
     
 
@@ -1187,7 +1157,6 @@
 
 
 <!-- Scripts at the end of body -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clockpicker/0.0.7/bootstrap-clockpicker.min.js"></script>
 <script>
     $(document).ready(function() {
