@@ -577,44 +577,47 @@
                 <!-- Right Side - Form Section -->
                 <div class="modal-body flex-grow-1">
                     <div class="modal-header text-white rounded-top-4" style="background: linear-gradient(135deg, #670a0a, #a50f0f);">
-                        <h5 class="modal-title text-white fw-bold" id="detailsModalLabel">Please Submit Your Details</h5>
+                        <h5 class="modal-title text-white fw-bold" id="detailsModalLabel" style="font-family: 'Chunk Five', serif; font-size: 25px;">Please Submit Your Details</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form>
                         <div class="p-3">
                             <div class="mb-3">
-                                <label for="fullName" class="form-label">Full Name</label>
+                                <label for="fullName" class="form-label" style="font-family: 'league spartan', serif; font-size: 18px;">Full Name</label>
                                 <div class="input-group">
                                     <span class="input-group-text bg-light"><i class="bi bi-person"></i></span>
                                     <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="whatsappNumber" class="form-label">WhatsApp Number</label>
+                                <label for="whatsappNumber" class="form-label" style="font-family: 'league spartan', serif; font-size: 18px;">WhatsApp Number</label>
                                 <div class="input-group">
                                     <span class="input-group-text bg-light"><i class="bi bi-whatsapp"></i></span>
                                     <input type="tel" class="form-control" id="whatsappNumber" placeholder="Enter your WhatsApp number">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email ID</label>
+                                <label for="email" class="form-label" style="font-family: 'league spartan', serif; font-size: 18px;">Email ID</label>
                                 <div class="input-group">
                                     <span class="input-group-text bg-light"><i class="bi bi-envelope"></i></span>
                                     <input type="email" class="form-control" id="email" placeholder="Enter your email">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="city" class="form-label">City of Residence</label>
+                                <label for="city" class="form-label" style="font-family: 'league spartan', serif; font-size: 18px;">City of Residence</label>
                                 <div class="input-group">
                                     <span class="input-group-text bg-light"><i class="bi bi-geo-alt"></i></span>
                                     <input type="text" class="form-control" id="city" placeholder="Enter your city">
+                                    <input type="hidden" name="utm_source" id="utm_source">
+                                    <input type="hidden" name="utm_medium" id="utm_medium">
+                                    <input type="hidden" name="utm_campaign" id="utm_campaign">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="connectTime" class="form-label">Convenient Time to Connect</label>
-                                <div class="input-group clockpicker">
+                                <label for="connectTime" class="form-label" style="font-family: 'league spartan', serif; font-size: 18px;">Convenient Time to Connect</label>
+                                <div class="input-group">
                                     <span class="input-group-text bg-light"><i class="bi bi-clock"></i></span>
-                                    <input type="text" class="form-control" id="connectTime" placeholder="Select Time">
+                                    <input type="text" class="form-control" id="connectTime" placeholder="Select Time" readonly>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-4">
@@ -717,6 +720,36 @@
         margin-right: auto;
         width: 100%;
         text-align: center;
+    }
+
+    .modal-dialog {
+        max-width: 800px;
+    }
+
+    .modal-content {
+        border-radius: 20px;
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+        display: flex;
+        overflow: hidden;
+    }
+
+    .modal-image {
+        width: 40%;
+        background: #f5f5f5;
+    }
+
+    .modal-image img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .modal-body {
+        width: 60%;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 0 20px 20px 0;
     }
 
     /* 📱 MOBILE VIEW (iPhone 12 Pro + smaller screens) */
@@ -874,6 +907,7 @@
                 border-radius: 12px;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
                 transition: transform 0.3s ease;
+                min-height: 18.5vh;
             " onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0)';">
                 <h4 style="color: #cc3366; font-weight: 600; font-size: 1.5rem; margin-bottom: 10px;">Women Empowerment Scholarships</h4>
                 <p style="margin-bottom: 0; line-height: 1.6; color: #333333;">
@@ -1270,6 +1304,7 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.10.0/dist/js/coreui.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -1287,7 +1322,7 @@
 
 <!-- Scripts at the end of body -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clockpicker/0.0.7/bootstrap-clockpicker.min.js"></script>
-<script>
+<!-- <script>
     $(document).ready(function() {
         $('.clockpicker').clockpicker({
             placement: 'top', // Open above the input
@@ -1297,6 +1332,33 @@
         }).on('change', function(e){
             // Ensure the value is populated into the input
             $('#connectTime').val($(this).find('input').val());
+        });
+    });
+</script> -->
+<script>
+    function getUTMParameters() {
+        let urlParams = new URLSearchParams(window.location.search);
+        let utm_source = urlParams.get('utm_source') || 'direct';
+        let utm_medium = urlParams.get('utm_medium') || 'none';
+        let utm_campaign = urlParams.get('utm_campaign') || 'none';
+
+        // Store in Local Storage or Cookies
+        sessionStorage.setItem('utm_source', utm_source);
+        sessionStorage.setItem('utm_medium', utm_medium);
+        sessionStorage.setItem('utm_campaign', utm_campaign);
+    }
+    getUTMParameters();
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("utm_source").value = sessionStorage.getItem("utm_source") || "direct";
+        document.getElementById("utm_medium").value = sessionStorage.getItem("utm_medium") || "none";
+        document.getElementById("utm_campaign").value = sessionStorage.getItem("utm_campaign") || "none";
+            $('#connectTime').clockpicker({
+            autoclose: true,
+            donetext: 'Done',
+            placement: 'top',
+            align: 'left',
+            default: 'now',
+            twelvehour: true
         });
     });
 </script>
