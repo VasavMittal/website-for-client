@@ -104,10 +104,6 @@
             }
         }
     });
-    $('.clockpicker').clockpicker({
-        autoclose: true, // Automatically close after selecting time
-        donetext: 'Done' // Text for the Done button
-    });
     const scriptURL = "https://script.google.com/macros/s/AKfycbxQ1DGPgonB92uhIip-mNNO42XtBBjLPp_aJt14DqjzAZSwnjtQUr8jI4uTg5p1VfCpwA/exec";
 
         $("#submitForm").click(function (event) {
