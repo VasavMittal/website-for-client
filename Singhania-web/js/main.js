@@ -25,7 +25,6 @@
         }
     });
     
-    
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
@@ -115,6 +114,9 @@
             let email = $("#email").val().trim();
             let city = $("#city").val().trim();
             let connectTime = $("#connectTime").val();
+            let utmSource = $("#utm_source").val();
+            let utmMedium = $("#utm_medium").val();
+            let utmCampaign = $("#utm_campaign").val();
 
             // Validation Regex
             let nameRegex = /^[a-zA-Z\s]+$/; 
@@ -151,7 +153,10 @@
                 "WhatsApp Number": whatsappNumber,
                 "Email ID": email,
                 "City of Residence": city,
-                "Convenient Time to Connect": connectTime
+                "Convenient Time to Connect": connectTime,
+                "Utm source" : utmSource,
+                "Utm medium" : utmMedium, 
+                "Utm campaign" : utmCampaign
             };
 
             $.ajax({
