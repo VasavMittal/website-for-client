@@ -746,9 +746,6 @@
                                 <div class="input-group">
                                     <span class="input-group-text bg-light"><i class="bi bi-geo-alt"></i></span>
                                     <input type="text" class="form-control" id="city" placeholder="Enter your city">
-                                    <input type="hidden" name="utm_source" id="utm_source">
-                                    <input type="hidden" name="utm_medium" id="utm_medium">
-                                    <input type="hidden" name="utm_campaign" id="utm_campaign">
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -1334,21 +1331,11 @@
 
 <script>
     function getUTMParameters() {
-        let urlParams = new URLSearchParams(window.location.search);
-        let utm_source = urlParams.get('utm_source') || 'direct';
-        let utm_medium = urlParams.get('utm_medium') || 'none';
-        let utm_campaign = urlParams.get('utm_campaign') || 'none';
-
-        // Store in Local Storage or Cookies
-        sessionStorage.setItem('utm_source', utm_source);
-        sessionStorage.setItem('utm_medium', utm_medium);
-        sessionStorage.setItem('utm_campaign', utm_campaign);
+        let fullUrl = window.location.href;
+        sessionStorage.setItem('url', fullUrl);
     }
     getUTMParameters();
     document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("utm_source").value = sessionStorage.getItem("utm_source") || "direct";
-        document.getElementById("utm_medium").value = sessionStorage.getItem("utm_medium") || "none";
-        document.getElementById("utm_campaign").value = sessionStorage.getItem("utm_campaign") || "none";
         let select = document.getElementById("connectTime");
         let option = new Option("--:--", "");
         select.appendChild(option);
