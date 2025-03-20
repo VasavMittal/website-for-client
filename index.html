@@ -876,59 +876,62 @@
     }
 
     /* 📱 MOBILE VIEW (iPhone 12 Pro + smaller screens) */
-    @media (max-width: 768px) {
-        .overlay-container {
-            height: auto;
-            padding: 20px;
-            background: transparent; /* Remove background */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        .overlay-image {
-            position: static; /* Remove absolute positioning */
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px; /* Add spacing between text and image */
-            display: block;
-            border-radius: 10px; /* Optional for rounded corners */
-            object-fit: cover;
-        }
-
-        .overlay-content {
-            position: static; /* Remove absolute positioning */
-            transform: none;
-            flex-direction: column;
-            gap: 20px;
-            width: 100%;
-            z-index: 1;
-            text-align: center;
-        }
-
-        .overlay-column {
-            width: 100%;
-            gap: 16px;
-        }
-
-        .overlay-item i {
-            font-size: 22px;
-            margin-top: 2px;
-            line-height: 1;
-        }
-
-        .overlay-item p {
-            font-size: 14px;
-            line-height: 1.5;
-            text-align: start;
-        }
-
-        .section-title {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
+    /* 📱 MOBILE VIEW (iPhone 12 Pro + smaller screens) */
+@media (max-width: 768px) {
+    .overlay-container {
+        height: auto;
+        padding: 0; /* Remove padding */
+        background: transparent; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
+
+    .overlay-image {
+        position: static;
+        width: 100vw; /* Make the image full width of viewport */
+        height: auto;
+        margin-bottom: 20px;
+        display: block;
+        border-radius: 0; /* Remove rounded corners */
+        object-fit: cover;
+    }
+
+    .overlay-content {
+        position: static;
+        transform: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        z-index: 1;
+        text-align: center;
+        padding: 0 20px; /* Keep content padded while image extends fully */
+    }
+
+    .overlay-column {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .overlay-item i {
+        font-size: 22px;
+        margin-top: 2px;
+        line-height: 1;
+    }
+
+    .overlay-item p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: start;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
 </style>
 
 <div class="container-fluid py-5 custom-container">
