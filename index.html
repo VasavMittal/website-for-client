@@ -42,31 +42,31 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0 py-2">
-        <div class="d-flex flex-column align-items-center px-4 px-lg-5">
-            <!-- Main Image -->
-            <img src="img/singhania_logo-rm.png" 
-                 alt="Logo" 
-                 style="height: 50px; width: auto;">
-    
-            <!-- Small Images Below -->
-            <div class="d-flex justify-content-center gap-2 mt-1">
-                <img src="img/ugc.png" alt="Small Image 1" style="height: 20px; width: auto;">
-                <img src="img/bar.png" alt="Small Image 2" style="height: 20px; width: auto;">
-                <img src="img/coa.png" alt="Small Image 3" style="height: 20px; width: auto;">
-            </div>
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0 py-2">
+    <div class="d-flex flex-column align-items-center px-4 px-lg-5">
+        <!-- Main Image -->
+        <img src="img/singhania_logo-rm.png" 
+             alt="Logo" 
+             style="height: 70px; width: auto;">
+
+        <!-- Separator Line -->
+        <hr style="width: 100%;  border: 1px solid #000000; margin: 4px 0;">
+
+        <!-- Small Images Below -->
+        <div class="d-flex justify-content-center gap-3 mt-1">
+            <img src="img/ugc.png" alt="Small Image 1" style="height: 30px; width: auto;">
+            <img src="img/bar.png" alt="Small Image 2" style="height: 30px; width: auto;">
+            <img src="img/coa.png" alt="Small Image 3" style="height: 30px; width: auto;">
         </div>
-    
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <!-- Optional: Apply Now Button or Links Here -->
-        </div>
-    </nav>
-       
-    
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- Optional: Apply Now Button or Links Here -->
+    </div>
+</nav>
 <!-- Navbar End -->
 
-
-  
+       
 
 
    <!-- Hero Section Start -->
@@ -77,9 +77,7 @@
             background-size: cover;
             padding: 150px 0; /* Increased height */
             color: #000000;
-            overflow: hidden;
-            border-bottom-left-radius: 60px;
-            border-bottom-right-radius: 60px;
+            overflow: hidden;            
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             position: relative;
         ">
@@ -93,8 +91,7 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.65);
             z-index: 1;
-            border-bottom-left-radius: 60px;
-            border-bottom-right-radius: 60px;
+            
         "></div>
         
         <div class="container position-relative" style="z-index: 2;">
@@ -148,7 +145,7 @@
                         <strong style="color: #ffd700;">100% Internship Guarantee</strong>
                     </p>
                     
-                    <a href="#" class="btn btn-primary px-4 py-3 rounded-pill" 
+                    <a href="#" class="btn btn-primary px-6 py-3 rounded-pill" 
                        data-bs-toggle="modal" data-bs-target="#detailsModal"
                        style="
                             border-radius: 30px; 
@@ -304,7 +301,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-end p-2">
+                    <div class="d-flex justify-content-center p-2">
                         <a href="#" class="btn btn-primary px-4 py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
                             font-size: 18px;
                             font-weight: 600;
@@ -430,7 +427,7 @@
                 </div>
             </div>
     
-            <div class="d-flex justify-content-end p-2">
+            <div class="d-flex justify-content-center p-2">
                 <a href="#" class="btn btn-primary px-4 py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
                     font-size: 18px;
                             font-weight: 600;
@@ -452,7 +449,6 @@
 
 
  <!-- Why Choose Us Section Start -->
- <br></br>
  <div class="container py-5">
     <div class="text-center mb-5">
         <h2 style="
@@ -679,7 +675,7 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-end p-2">
+    <div class="d-flex justify-content-center p-2">
         <a href="#" class="btn btn-primary px-4 py-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal" style="
             font-size: 18px;
                     font-weight: 600;
@@ -814,9 +810,9 @@
 
     .overlay-content {
         position: absolute;
-        top: 5%;
+        top: 18%; /* Lowered text */
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
         color: rgb(0, 0, 0);
         display: flex;
         justify-content: center;
@@ -879,59 +875,36 @@
         text-align: center;
     }
 
-    .modal-dialog {
-        max-width: 800px;
-    }
-
-    .modal-content {
-        border-radius: 20px;
-        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
-        display: flex;
-        overflow: hidden;
-    }
-
-    .modal-image {
-        width: 40%;
-        background: #f5f5f5;
-    }
-
-    .modal-image img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-        border-radius: 20px 0 0 20px;
-    }
-
-    .modal-body {
-        width: 60%;
-        background: #ffffff;
-        padding: 20px;
-        border-radius: 0 20px 20px 0;
-    }
-
     /* 📱 MOBILE VIEW (iPhone 12 Pro + smaller screens) */
     @media (max-width: 768px) {
         .overlay-container {
             height: auto;
-            background: linear-gradient(to bottom right, #cfdef5, #e0eafc);
-            padding: 40px 20px;
+            padding: 20px;
+            background: transparent; /* Remove background */
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: flex-start;
         }
 
         .overlay-image {
-            display: none;
+            position: static; /* Remove absolute positioning */
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* Add spacing between text and image */
+            display: block;
+            border-radius: 10px; /* Optional for rounded corners */
+            object-fit: cover;
         }
 
         .overlay-content {
-            position: relative;
-            top: 0;
-            left: 0;
+            position: static; /* Remove absolute positioning */
             transform: none;
             flex-direction: column;
             gap: 20px;
             width: 100%;
+            z-index: 1;
+            text-align: center;
         }
 
         .overlay-column {
@@ -957,8 +930,6 @@
     }
 </style>
 
-
-<br></br>
 <div class="container-fluid py-5 custom-container">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
         <h4 class="section-title bg-white text-primary px-3">Campus Facilities</h4>
@@ -972,36 +943,36 @@
             <!-- Left Column -->
             <div class="overlay-column">
                 <div class="overlay-item">
-                    <i class="fa fa-building"></i>
-                    <p><strong>State-of-the-Art Infrastructure:</strong> Smart classrooms, digital libraries & research centers.</p>
+                    <i class="fa fa-gavel"></i>
+                    <p><strong>Dedicated Moot Court:</strong> Simulated legal training & case law studies.</p>
                 </div>
                 <div class="overlay-item">
-                    <i class="fa fa-book"></i>
-                    <p><strong>Global Library Access:</strong> Resources from British Council, AIU, and American Library Association.</p>
-                </div>
+                    <i class="fa fa-building"></i>
+                    <p><strong>State-of-the-Art Infrastructure:</strong> Smart classrooms, digital libraries & research centers.</p>
+                </div>               
             </div>
 
             <!-- Right Column -->
             <div class="overlay-column">
                 <div class="overlay-item">
-                    <i class="fa fa-gavel"></i>
-                    <p><strong>Dedicated Moot Court:</strong> Simulated legal training & case law studies.</p>
-                </div>
-                <div class="overlay-item">
                     <i class="fa fa-bed"></i>
                     <p><strong>On-Campus Hostel & Mess:</strong> Safe & comfortable residential facilities.</p>
                 </div>
+                <div class="overlay-item">
+                    <i class="fa fa-book"></i>
+                    <p><strong>Global Library Access:</strong> Resources from British Council, AIU, and American Library Association.</p>
+                </div>                        
             </div>
         </div>
     </div>
 </div>
+
     
 <!-- Facilities End -->    
 
 
 
 <!-- Available Scholarships Section Start -->
-<br></br>
 <style>
     /* Typography Settings */
     @import url('https://fonts.googleapis.com/css2?family=Chunk+Five&family=League+Spartan:wght@400;600&family=Poppins:wght@400;600&display=swap');
@@ -1175,7 +1146,6 @@
             font-size: 14px;
         }
     </style>
-    <br></br>
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
@@ -1271,7 +1241,7 @@
     <div class="container-fluid bg-dark text-light footer pt-1 mt-1 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-6 col-md-6">
+                <!-- <div class="col-lg-6 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
                     <p class="mb-2">
                         <i class="fa fa-map-marker-alt me-3"></i>
@@ -1285,7 +1255,7 @@
                         <i class="fa fa-phone-alt me-3"></i>
                         +91 9355168880
                     </p>
-                </div>
+                </div> -->
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Admission Open</h4>
                     <a href="#" class="btn btn-primary px-3 py-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailsModal">
