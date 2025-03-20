@@ -114,9 +114,8 @@
             let email = $("#email").val().trim();
             let city = $("#city").val().trim();
             let connectTime = $("#connectTime").val();
-            let utmSource = $("#utm_source").val();
-            let utmMedium = $("#utm_medium").val();
-            let utmCampaign = $("#utm_campaign").val();
+            let url = sessionStorage.getItem("url");
+           
 
             // Validation Regex
             let nameRegex = /^[a-zA-Z\s]+$/; 
@@ -154,9 +153,8 @@
                 "Email ID": email,
                 "City of Residence": city,
                 "Convenient Time to Connect": connectTime,
-                "Utm source" : utmSource,
-                "Utm medium" : utmMedium, 
-                "Utm campaign" : utmCampaign
+                "Url" : url,
+                "Lp name" : "Singhania_Law_1"
             };
 
             $.ajax({
