@@ -153,7 +153,8 @@
                 "Email ID": email,
                 "City of Residence": city,
                 "Convenient Time to Connect": connectTime,
-                "Url" : url
+                "Url" : url,
+                "Lp name" : "Singhania_Law_1"
             };
 
             $.ajax({
