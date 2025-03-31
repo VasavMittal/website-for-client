@@ -52,7 +52,7 @@
         <div class="overlay"></div>
 
         <!-- Apply Now Button -->
-        <a href="#" class="btn btn-primary apply-btn" 
+        <a href="#" class="btn apply-btn" 
            data-bs-toggle="modal" data-bs-target="#detailsModal">
             Apply Now
         </a>
@@ -81,7 +81,7 @@
         min-height: calc(100vh - 200px) !important; /* Ensure space at bottom */
     }
     .apply-btn {
-        transform: translateX(-150%) translateY(-140px);
+        transform: translateX(-95%) translateY(-120px);
     }
 }
 
@@ -102,7 +102,7 @@
     bottom: 20px;
     right: 20px;
     z-index: 2;
-    border-radius: 30px; 
+    border-radius: 10px; 
     font-weight: 600;
     padding: 14px 40px;
     background-color: #831515;
@@ -111,12 +111,19 @@
     transition: all 0.4s ease;                            
     font-size: 18px;
 }
+.btn-primary{
+    border-radius: 10px;
+
+}
 
 .apply-btn:hover {
     background-color: #db2e2e;
 }
 
 </style>
+
+   <!-- Hero Section End -->
+
 
 <!-- Form Section Start -->
     <div class="container py-5">
@@ -1340,6 +1347,105 @@
  </style>
 <!-- Available Scholarships Section End -->
     
+<!-- Form Section Start -->
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card p-4 border-0 shadow-lg" style="
+                border-radius: 15px;
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            ">
+                <h2 class="text-center mb-4" style="
+                    font-family: 'Chunk Five', serif;
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: #831515;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                ">
+                    Apply Now
+                </h2>
+
+                <form>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required style="
+                                border-radius: 8px;
+                                padding: 14px;
+                                border: 1px solid #ddd;
+                                box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+                                transition: 0.3s ease;
+                            ">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">WhatsApp Number</label>
+                            <input type="tel" class="form-control" id="whatsapp" required style="
+                                border-radius: 8px;
+                                padding: 14px;
+                                border: 1px solid #ddd;
+                                box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+                            ">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="mainFormEmail" required style="
+                                border-radius: 8px;
+                                padding: 14px;
+                                border: 1px solid #ddd;
+                                box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+                            ">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">City of Residence</label>
+                            <input type="text" class="form-control" id="mainFormCity" required style="
+                                border-radius: 8px;
+                                padding: 14px;
+                                border: 1px solid #ddd;
+                                box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+                            ">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label class="form-label">Convenient Time to Connect</label>
+                            <select class="form-select" id="mainFormTime" required style="
+                                border-radius: 8px;
+                                padding: 14px;
+                                border: 1px solid #ddd;
+                                box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+                            ">
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn px-5 py-3 rounded-pill" style="
+                            font-size: 18px;
+                            font-weight: 600;
+                            background: linear-gradient(135deg, #831515, #db2e2e);
+                            color: #ffffff;
+                            border-radius: 30px;
+                            box-shadow: 0 5px 15px rgba(255, 0, 60, 0.382);
+                            transition: all 0.3s ease;
+                            border: none;
+                        "
+                        onmouseover="this.style.transform='scale(1.05)';"
+                        onmouseout="this.style.transform='scale(1)';"
+                        id="submitApplication">
+                            Submit Application
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Form Section End -->
 
 
     
