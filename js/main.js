@@ -238,7 +238,88 @@
                 success: function (response) {
                     if (response.result === "success") {
                         swal("Done", "Submitted Successfully.", "success");
-                        $("#detailsModal form")[0].reset();
+                        $("#name").val("");
+                        $("#whatsapp").val("");
+                        $("#mainFormEmail").val("");
+                        $("#mainFormCity").val("");
+                        $("#mainFormTime").val("");
+                    } else {
+                        swal("Error", "Something went wrong. Please try again!", "error");
+                        console.error("Google Script Error:", response.error);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    swal("Error", "Something went wrong. Please try again!", "error");
+                    console.error("AJAX Error:", error);
+                }
+            });
+        });
+
+        $("#SecondFormSubmitApplication").click(function (event) {
+            event.preventDefault();
+
+            // Get input values
+            let fullName = $("#secondFormName").val().trim();
+            let whatsappNumber = $("#secondFormWhatsapp").val().trim();
+            let email = $("#secondFormEmail").val().trim();
+            let city = $("#secondFormCity").val().trim();
+            let connectTime = $("#secondFormTime").val();
+            let url = sessionStorage.getItem("url");
+           
+
+            // Validation Regex
+            let nameRegex = /^[a-zA-Z\s]+$/; 
+            let phoneRegex = /^[6-9]\d{9}$/;
+            let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
+
+            // Validation Checks
+            if (fullName === "" || !nameRegex.test(fullName)) {
+                swal("Invalid Name", "Please enter a valid full name (letters only).", "error");
+                return;
+            }
+            if (whatsappNumber === "" || !phoneRegex.test(whatsappNumber)) {
+                swal("Invalid Number", "Please enter a valid 10-digit WhatsApp number.", "error");
+                return;
+            }
+            if (email === "" || !emailRegex.test(email)) {
+                swal("Invalid Email", "Please enter a valid email address.", "error");
+                return;
+            }
+            if (city === "" || !nameRegex.test(city)) {
+                swal("Invalid City", "Please enter a valid city name (letters only).", "error");
+                return;
+            }
+            if (connectTime === "") {
+                swal("Invalid Time", "Please select a convenient time to connect.", "error");
+                return;
+            }
+
+            // Hide Modal on successful validation
+            $("#detailsModal").modal("hide");
+
+            let formData = {
+                "Full Name": fullName,
+                "WhatsApp Number": whatsappNumber,
+                "Email ID": email,
+                "City of Residence": city,
+                "Convenient Time to Connect": connectTime,
+                "Url" : url,
+                "Lp name" : "Singhania_Law_1"
+            };
+
+            $.ajax({
+                url: scriptURL,
+                type: "POST",
+                data: formData,
+                contentType: "application/x-www-form-urlencoded",
+                success: function (response) {
+                    if (response.result === "success") {
+                        swal("Done", "Submitted Successfully.", "success");
+                        $("#secondFormName").val("");
+                        $("#secondFormWhatsapp").val("");
+                        $("#secondFormEmail").val("");
+                        $("#secondFormCity").val("");
+                        $("#secondFormTime").val("");
                     } else {
                         swal("Error", "Something went wrong. Please try again!", "error");
                         console.error("Google Script Error:", response.error);
