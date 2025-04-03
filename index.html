@@ -1374,7 +1374,7 @@
                     <div class="row g-4">
                         <div class="col-md-6">
                             <label class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" required style="
+                            <input type="text" class="form-control" id="secondFormName" required style="
                                 border-radius: 8px;
                                 padding: 14px;
                                 border: 1px solid #ddd;
@@ -1385,7 +1385,7 @@
 
                         <div class="col-md-6">
                             <label class="form-label">WhatsApp Number</label>
-                            <input type="tel" class="form-control" id="whatsapp" required style="
+                            <input type="tel" class="form-control" id="secondFormWhatsapp" required style="
                                 border-radius: 8px;
                                 padding: 14px;
                                 border: 1px solid #ddd;
@@ -1395,7 +1395,7 @@
 
                         <div class="col-md-6">
                             <label class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="mainFormEmail" required style="
+                            <input type="email" class="form-control" id="secondFormEmail" required style="
                                 border-radius: 8px;
                                 padding: 14px;
                                 border: 1px solid #ddd;
@@ -1405,7 +1405,7 @@
 
                         <div class="col-md-6">
                             <label class="form-label">City of Residence</label>
-                            <input type="text" class="form-control" id="mainFormCity" required style="
+                            <input type="text" class="form-control" id="secondFormCity" required style="
                                 border-radius: 8px;
                                 padding: 14px;
                                 border: 1px solid #ddd;
@@ -1415,7 +1415,7 @@
 
                         <div class="col-md-12">
                             <label class="form-label">Convenient Time to Connect</label>
-                            <select class="form-select" id="mainFormTime" required style="
+                            <select class="form-select" id="secondFormTime" required style="
                                 border-radius: 8px;
                                 padding: 14px;
                                 border: 1px solid #ddd;
@@ -1438,7 +1438,7 @@
                         "
                         onmouseover="this.style.transform='scale(1.05)';"
                         onmouseout="this.style.transform='scale(1)';"
-                        id="submitApplication">
+                        id="SecondFormSubmitApplication">
                             Submit Application
                         </button>
                     </div>
@@ -1577,6 +1577,7 @@
     document.addEventListener("DOMContentLoaded", function () {
     let select1 = document.getElementById("connectTime");
     let select2 = document.getElementById("mainFormTime");
+    let select3 = document.getElementById("secondFormTime");
 
     // Function to populate the dropdown
     function populateDropdown(select) {
@@ -1604,6 +1605,7 @@
     // Populate both dropdowns
     if (select1) populateDropdown(select1);
     if (select2) populateDropdown(select2);
+    if (select3) populateDropdown(select3);
 });
 </script>
 </body>
