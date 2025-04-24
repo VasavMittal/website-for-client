@@ -103,7 +103,7 @@
             }
         }
     });
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxQ1DGPgonB92uhIip-mNNO42XtBBjLPp_aJt14DqjzAZSwnjtQUr8jI4uTg5p1VfCpwA/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbz6kqAMApiH-2QPgTm3E_awsVA7LTK79C0le1Mg0fMQErX4peOzzoDNZMmwYetMdyeJ/exec";
 
         $("#submitForm").click(function (event) {
             event.preventDefault();
@@ -158,24 +158,23 @@
             };
 
             $.ajax({
-                url: scriptURL,
-                type: "POST",
-                data: formData,
-                contentType: "application/x-www-form-urlencoded",
-                success: function (response) {
-                    if (response.result === "success") {
-                        swal("Done", "Submitted Successfully.", "success");
-                        $("#detailsModal form")[0].reset();
-                    } else {
-                        swal("Error", "Something went wrong. Please try again!", "error");
-                        console.error("Google Script Error:", response.error);
-                    }
-                },
-                error: function (xhr, status, error) {
-                    swal("Error", "Something went wrong. Please try again!", "error");
-                    console.error("AJAX Error:", error);
-                }
-            });
+				url: scriptURL,
+				type: "POST",
+				data: formData,
+				contentType: "application/x-www-form-urlencoded",
+				success: function (response) {
+					console.log("Form submitted successfully", response);
+				},
+				error: function (xhr, status, error) {
+					console.error("AJAX Error:", error);
+				}
+			});
+			
+			// Redirect without waiting for the server
+			setTimeout(() => {
+				window.location.href = "thankyou.html";
+			}, 500); // Redirect after 0.5 second
+			
         });
 
         $("#submitApplication").click(function (event) {
@@ -231,28 +230,23 @@
             };
 
             $.ajax({
-                url: scriptURL,
-                type: "POST",
-                data: formData,
-                contentType: "application/x-www-form-urlencoded",
-                success: function (response) {
-                    if (response.result === "success") {
-                        swal("Done", "Submitted Successfully.", "success");
-                        $("#name").val("");
-                        $("#whatsapp").val("");
-                        $("#mainFormEmail").val("");
-                        $("#mainFormCity").val("");
-                        $("#mainFormTime").val("");
-                    } else {
-                        swal("Error", "Something went wrong. Please try again!", "error");
-                        console.error("Google Script Error:", response.error);
-                    }
-                },
-                error: function (xhr, status, error) {
-                    swal("Error", "Something went wrong. Please try again!", "error");
-                    console.error("AJAX Error:", error);
-                }
-            });
+				url: scriptURL,
+				type: "POST",
+				data: formData,
+				contentType: "application/x-www-form-urlencoded",
+				success: function (response) {
+					console.log("Form submitted successfully", response);
+				},
+				error: function (xhr, status, error) {
+					console.error("AJAX Error:", error);
+				}
+			});
+			
+			// Redirect without waiting for the server
+			setTimeout(() => {
+				window.location.href = "thankyou.html";
+			}, 500); // Redirect after 0.5 second
+			
         });
 
         $("#SecondFormSubmitApplication").click(function (event) {
@@ -308,28 +302,23 @@
             };
 
             $.ajax({
-                url: scriptURL,
-                type: "POST",
-                data: formData,
-                contentType: "application/x-www-form-urlencoded",
-                success: function (response) {
-                    if (response.result === "success") {
-                        swal("Done", "Submitted Successfully.", "success");
-                        $("#secondFormName").val("");
-                        $("#secondFormWhatsapp").val("");
-                        $("#secondFormEmail").val("");
-                        $("#secondFormCity").val("");
-                        $("#secondFormTime").val("");
-                    } else {
-                        swal("Error", "Something went wrong. Please try again!", "error");
-                        console.error("Google Script Error:", response.error);
-                    }
-                },
-                error: function (xhr, status, error) {
-                    swal("Error", "Something went wrong. Please try again!", "error");
-                    console.error("AJAX Error:", error);
-                }
-            });
+				url: scriptURL,
+				type: "POST",
+				data: formData,
+				contentType: "application/x-www-form-urlencoded",
+				success: function (response) {
+					console.log("Form submitted successfully", response);
+				},
+				error: function (xhr, status, error) {
+					console.error("AJAX Error:", error);
+				}
+			});
+			
+			// Redirect without waiting for the server
+			setTimeout(() => {
+				window.location.href = "thankyou.html";
+			}, 500); // Redirect after 0.5 second
+			
         });
     
 })(jQuery);
