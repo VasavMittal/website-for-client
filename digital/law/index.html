@@ -223,13 +223,19 @@
     
                             <div class="col-md-12">
                                 <label class="form-label">Convenient Time to Connect</label>
-                                <select class="form-select" id="mainFormTime" required style="
-                                    border-radius: 8px;
-                                    padding: 14px;
-                                    border: 1px solid #ddd;
-                                    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-                                ">
-                                </select>
+<input 
+    type="text" 
+    class="form-control" 
+    required 
+    placeholder="e.g., 3:00 PM – 4:00 PM"
+    style="
+        border-radius: 8px;
+        padding: 14px;
+        border: 1px solid #ddd;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    "
+>
+
                             </div>
                         </div>
     
@@ -890,13 +896,14 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="connectTime" class="form-label" style="font-family: 'league spartan', serif; font-size: 18px;">Convenient Time to Connect</label>
+                                <label for="connectTime" class="form-label" style="font-family: 'league spartan', serif; font-size: 18px;">
+                                    Convenient Time to Connect
+                                </label>
                                 <div class="input-group">
                                     <span class="input-group-text bg-light"><i class="bi bi-clock"></i></span>
-                                    <select class="form-control" id="connectTime">
-                                        <!-- Options will be added dynamically -->
-                                    </select>
+                                    <input type="text" class="form-control" id="connectTime" placeholder="e.g., 4:00 PM - 5:00 PM">
                                 </div>
+                                
                             </div>
                             <div class="d-flex justify-content-between mt-4">
                                 <button type="button" class="btn btn-outline-secondary px-4 py-2" data-bs-dismiss="modal">Close</button>
@@ -1444,13 +1451,20 @@
 
                         <div class="col-md-12">
                             <label class="form-label">Convenient Time to Connect</label>
-                            <select class="form-select" id="secondFormTime" required style="
-                                border-radius: 8px;
-                                padding: 14px;
-                                border: 1px solid #ddd;
-                                box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-                            ">
-                            </select>
+<input 
+    type="text" 
+    class="form-control" 
+    id="secondFormTime" 
+    required 
+    placeholder="e.g., 3:00 PM – 4:00 PM"
+    style="
+        border-radius: 8px;
+        padding: 14px;
+        border: 1px solid #ddd;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    "
+>
+
                         </div>
                     </div>
 
@@ -1603,39 +1617,39 @@
         sessionStorage.setItem('url', fullUrl);
     }
     getUTMParameters();
-    document.addEventListener("DOMContentLoaded", function () {
-    let select1 = document.getElementById("connectTime");
-    let select2 = document.getElementById("mainFormTime");
-    let select3 = document.getElementById("secondFormTime");
+//     document.addEventListener("DOMContentLoaded", function () {
+//     let select1 = document.getElementById("connectTime");
+//     let select2 = document.getElementById("mainFormTime");
+//     let select3 = document.getElementById("secondFormTime");
 
-    // Function to populate the dropdown
-    function populateDropdown(select) {
-        // Clear any existing options
-        select.innerHTML = "";
+//     // Function to populate the dropdown
+//     function populateDropdown(select) {
+//         // Clear any existing options
+//         select.innerHTML = "";
 
-        // Default placeholder option
-        let defaultOption = new Option("--:--", "");
-        select.appendChild(defaultOption);
+//         // Default placeholder option
+//         let defaultOption = new Option("--:--", "");
+//         select.appendChild(defaultOption);
 
-        let timeIntervals = 15; // 15-minute intervals
+//         let timeIntervals = 15; // 15-minute intervals
 
-        for (let hours = 0; hours < 24; hours++) {
-            for (let minutes = 0; minutes < 60; minutes += timeIntervals) {
-                let ampm = hours < 12 ? "AM" : "PM";
-                let displayHour = hours % 12 || 12; // Convert 24-hour to 12-hour format
-                let displayMinutes = minutes.toString().padStart(2, "0");
-                let timeString = `${displayHour}:${displayMinutes} ${ampm}`;
-                let option = new Option(timeString, timeString);
-                select.appendChild(option);
-            }
-        }
-    }
+//         for (let hours = 0; hours < 24; hours++) {
+//             for (let minutes = 0; minutes < 60; minutes += timeIntervals) {
+//                 let ampm = hours < 12 ? "AM" : "PM";
+//                 let displayHour = hours % 12 || 12; // Convert 24-hour to 12-hour format
+//                 let displayMinutes = minutes.toString().padStart(2, "0");
+//                 let timeString = `${displayHour}:${displayMinutes} ${ampm}`;
+//                 let option = new Option(timeString, timeString);
+//                 select.appendChild(option);
+//             }
+//         }
+//     }
 
-    // Populate both dropdowns
-    if (select1) populateDropdown(select1);
-    if (select2) populateDropdown(select2);
-    if (select3) populateDropdown(select3);
-});
+//     // Populate both dropdowns
+//     if (select1) populateDropdown(select1);
+//     if (select2) populateDropdown(select2);
+//     if (select3) populateDropdown(select3);
+// });
 </script>
 </body>
 
