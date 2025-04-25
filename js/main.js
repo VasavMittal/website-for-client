@@ -185,15 +185,8 @@
                         { "meta_key": "convenient_time", "meta_value": connectTime }
                     ]
                 }),
-                success: function (data, textStatus, xhr) {
-                    console.log("Status:", textStatus);
-                    console.log("Raw response text:", xhr.responseText);
-                    try {
-                        const json = JSON.parse(xhr.responseText);
-                        console.log("Parsed JSON:", json);
-                    } catch (e) {
-                        console.warn("Could not parse response as JSON");
-                    }
+                success: function (response) {
+                    console.log("API lead created successfully", response);
                 },
                 error: function (xhr, status, error) {
                     console.error("Lead API Error:", error);
@@ -272,6 +265,30 @@
 					console.error("AJAX Error:", error);
 				}
 			});
+
+            //Second: Submit to your API
+            $.ajax({
+                url: 'https://platformapi.teleforce.in/api/v1/api/createlead/181743',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    name: fullName,
+                    email: email,
+                    mobile: whatsappNumber,
+                    city: city,
+                    address: "address", // Replace with actual address if available
+                    otherparams: [
+                        { "meta_key": "lead_name", "meta_value": "SU_2025_EDXSO_DIGITAL" },
+                        { "meta_key": "convenient_time", "meta_value": connectTime }
+                    ]
+                }),
+                success: function (response) {
+                    console.log("API lead created successfully", response);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Lead API Error:", error);
+                }
+            });
 			
 			// Redirect without waiting for the server
 			setTimeout(() => {
@@ -344,6 +361,30 @@
 					console.error("AJAX Error:", error);
 				}
 			});
+
+            //Second: Submit to your API
+            $.ajax({
+                url: 'https://platformapi.teleforce.in/api/v1/api/createlead/181743',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    name: fullName,
+                    email: email,
+                    mobile: whatsappNumber,
+                    city: city,
+                    address: "address", // Replace with actual address if available
+                    otherparams: [
+                        { "meta_key": "lead_name", "meta_value": "SU_2025_EDXSO_DIGITAL" },
+                        { "meta_key": "convenient_time", "meta_value": connectTime }
+                    ]
+                }),
+                success: function (response) {
+                    console.log("API lead created successfully", response);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Lead API Error:", error);
+                }
+            });
 			
 			// Redirect without waiting for the server
 			setTimeout(() => {
