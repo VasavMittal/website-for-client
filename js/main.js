@@ -169,31 +169,30 @@
 					console.error("AJAX Error:", error);
 				}
 			});
-            // Second: Submit to your API
-            // $.ajax({
-            //     url: 'https://api.domain/api/v1/api/createlead/account_id',  // Replace with real domain
-            //     type: 'POST',
-            //     contentType: 'application/x-www-form-urlencoded',
-            //     data: {
-            //         name: fullName,
-            //         email: email,
-            //         mobile: whatsappNumber,
-            //         city: city,
-            //         address: "Dummy Address", // Replace if you have actual field
-            //         usergroupid: "123456",     // Replace with real value
-            //         segmentid: "78910",        // Replace with real value
-            //         otherparams: JSON.stringify([
-            //             { "meta_key": "source", "meta_value": "landing_page" },
-            //             { "meta_key": "connect_time", "meta_value": connectTime }
-            //         ])
-            //     },
-            //     success: function (response) {
-            //         console.log("API lead created successfully", response);
-            //     },
-            //     error: function (xhr, status, error) {
-            //         console.error("Lead API Error:", error);
-            //     }
-            // });
+            //Second: Submit to your API
+            $.ajax({
+                url: 'https://platformapi.teleforce.in/api/v1/api/createlead/181743',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    name: fullName,
+                    email: email,
+                    mobile: whatsappNumber,
+                    city: city,
+                    address: "address", // Replace with actual address if available
+                    otherparams: [
+                        { "meta_key": "lead_name", "meta_value": "SU_2025_EDXSO_DIGITAL" },
+                        { "meta_key": "convenient_time", "meta_value": connectTime }
+                    ]
+                }),
+                success: function (response) {
+                    console.log("API lead created successfully", response);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Lead API Error:", error);
+                }
+            });
+            
 			
 			// Redirect without waiting for the server
 			setTimeout(() => {
