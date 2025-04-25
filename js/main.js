@@ -185,8 +185,15 @@
                         { "meta_key": "convenient_time", "meta_value": connectTime }
                     ]
                 }),
-                success: function (response) {
-                    console.log("API lead created successfully", response);
+                success: function (data, textStatus, xhr) {
+                    console.log("Status:", textStatus);
+                    console.log("Raw response text:", xhr.responseText);
+                    try {
+                        const json = JSON.parse(xhr.responseText);
+                        console.log("Parsed JSON:", json);
+                    } catch (e) {
+                        console.warn("Could not parse response as JSON");
+                    }
                 },
                 error: function (xhr, status, error) {
                     console.error("Lead API Error:", error);
