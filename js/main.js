@@ -163,7 +163,7 @@
             success: function (response) {
                 if (response.messages && response.messages[0].status.id === 7) {
                     console.log("OTP sent");
-                    $('#submitApplication').prop('disabled', false);
+                    $('#submitForm').prop('disabled', false);
                 } else {
                     swal("Invalid Number", "Please verify the number entered in WhatsApp Number", "error");
                 }
@@ -197,7 +197,7 @@
             success: function (response) {
                 if (response.messages && response.messages[0].status.id === 7) {
                     console.log("OTP sent");
-                    $('#submitApplication').prop('disabled', false);
+                    $('#SecondFormSubmitApplication').prop('disabled', false);
                 } else {
                     swal("Invalid Number", "Please verify the number entered in WhatsApp Number", "error");
                 }
