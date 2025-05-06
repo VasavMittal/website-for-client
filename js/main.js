@@ -130,6 +130,7 @@
                 if (response.messages && response.messages[0].status.id === 7) {
                     console.log("OTP sent");
                     $('#submitApplication').prop('disabled', false);
+                    $('#otpMessage').css('display','block');
                 } else {
                     swal("Invalid Number", "Please verify the number entered in WhatsApp Number", "error");
                 }
@@ -164,6 +165,7 @@
                 if (response.messages && response.messages[0].status.id === 7) {
                     console.log("OTP sent");
                     $('#submitForm').prop('disabled', false);
+                    $('#popupOtpMessage').css('display','block');
                 } else {
                     swal("Invalid Number", "Please verify the number entered in WhatsApp Number", "error");
                 }
@@ -198,6 +200,7 @@
                 if (response.messages && response.messages[0].status.id === 7) {
                     console.log("OTP sent");
                     $('#SecondFormSubmitApplication').prop('disabled', false);
+                    $('#secondOtpMessage').css('display','block');
                 } else {
                     swal("Invalid Number", "Please verify the number entered in WhatsApp Number", "error");
                 }
