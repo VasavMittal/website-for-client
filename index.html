@@ -1665,7 +1665,7 @@
         const utmSource = urlParams.get('utm_source');
         sessionStorage.setItem('utm_source', utmSource);
         sessionStorage.setItem('url', fullUrl);
-        if(utmSource !== 'paid'){
+        if(utmSource.toLowerCase() != 'partnerotp'){
             $('.sendOtpBtn').css("display", "none");
         }
         else{
