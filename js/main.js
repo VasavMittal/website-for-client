@@ -252,7 +252,7 @@
                 swal("Invalid Time", "Please select a convenient time to connect.", "error");
                 return;
             }
-            if(utm_source.toLowerCase() == 'partnerotp'){
+            if(utm_source && utm_source.toLowerCase() == 'partnerotp'){
                 if(GlobalOtp != parseInt(otp)){
                     swal("Invalid OTP", "Please Enter Valid Otp", "error");
                     return;
@@ -356,7 +356,7 @@
                 swal("Invalid Time", "Please select a convenient time to connect.", "error");
                 return;
             }
-            if(utm_source.toLowerCase() == 'partnerotp'){
+            if(utm_source && utm_source.toLowerCase() == 'partnerotp'){
                 if(GlobalOtp != parseInt(otp)){
                     swal("Invalid OTP", "Please Enter Valid Otp", "error");
                     return;
@@ -460,7 +460,7 @@
                 swal("Invalid Time", "Please select a convenient time to connect.", "error");
                 return;
             }
-            if(utm_source.toLowerCase() == 'partnerotp'){
+            if(utm_source && utm_source.toLowerCase() == 'partnerotp'){
                 if(GlobalOtp != parseInt(otp)){
                     swal("Invalid OTP", "Please Enter Valid Otp", "error");
                     return;
