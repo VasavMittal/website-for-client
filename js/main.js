@@ -226,6 +226,8 @@
             let utm_medium = sessionStorage.getItem('utm_medium');
             let utm_campaign = sessionStorage.getItem('utm_campaign');
             let otp = $("#otpPopup").val().trim();
+            let usergrpid = "GRP1iped2p093cme0"
+            let segid = "SEG8jtr2wwqnne1d1746615195237"
            
 
             // Validation Regex
@@ -253,6 +255,10 @@
             if (connectTime === "") {
                 swal("Invalid Time", "Please select a convenient time to connect.", "error");
                 return;
+            }
+            if(utm_source && (utm_source.toLowerCase() == 'partnerotp' || utm_source.toLowerCase() == 'partner')){
+                usergrpid = "GRP1iped2p093cme0"
+                segid = "SEGvqhkwzu90rr501746776094352"
             }
             if(utm_source && utm_source.toLowerCase() == 'partnerotp'){
                 if(GlobalOtp != parseInt(otp)){
@@ -297,8 +303,8 @@
                     mobile: whatsappNumber,
                     city: city,
                     source:"website",
-                    usergroupid: "GRP1iped2p093cme0", 
-                    segmentid: "SEG8jtr2wwqnne1d1746615195237", 
+                    usergroupid: usergrpid, 
+                    segmentid: segid, 
                     otherparams: [
                         { "meta_key": "convenient_time", "meta_value": connectTime },
                         { "meta_key": "utm_source", "meta_value": utm_source },
@@ -337,6 +343,8 @@
             let utm_medium = sessionStorage.getItem('utm_medium');
             let utm_campaign = sessionStorage.getItem('utm_campaign');
             let otp = $("#otpField").val().trim();
+            let usergrpid = "GRP1iped2p093cme0"
+            let segid = "SEG8jtr2wwqnne1d1746615195237"
            
 
             // Validation Regex
@@ -364,6 +372,10 @@
             if (connectTime === "") {
                 swal("Invalid Time", "Please select a convenient time to connect.", "error");
                 return;
+            }
+            if(utm_source && (utm_source.toLowerCase() == 'partnerotp' || utm_source.toLowerCase() == 'partner')){
+                usergrpid = "GRP1iped2p093cme0"
+                segid = "SEGvqhkwzu90rr501746776094352"
             }
             if(utm_source && utm_source.toLowerCase() == 'partnerotp'){
                 if(GlobalOtp != parseInt(otp)){
@@ -409,8 +421,8 @@
                     mobile: whatsappNumber,
                     city: city,
                     source:"website",
-                    usergroupid: "GRP1iped2p093cme0", 
-                    segmentid: "SEG8jtr2wwqnne1d1746615195237", 
+                    usergroupid: usergrpid, 
+                    segmentid: segid, 
                     otherparams: [                        
                         { "meta_key": "convenient_time", "meta_value": connectTime },
                         { "meta_key": "utm_source", "meta_value": utm_source },
@@ -447,6 +459,8 @@
             let utm_medium = sessionStorage.getItem('utm_medium');
             let utm_campaign = sessionStorage.getItem('utm_campaign');
             let otp = $("#otpSecondField").val().trim();
+            let usergrpid = "GRP1iped2p093cme0"
+            let segid = "SEG8jtr2wwqnne1d1746615195237"
            
 
             // Validation Regex
@@ -474,6 +488,10 @@
             if (connectTime === "") {
                 swal("Invalid Time", "Please select a convenient time to connect.", "error");
                 return;
+            }
+            if(utm_source && (utm_source.toLowerCase() == 'partnerotp' || utm_source.toLowerCase() == 'partner')){
+                usergrpid = "GRP1iped2p093cme0"
+                segid = "SEGvqhkwzu90rr501746776094352"
             }
             if(utm_source && utm_source.toLowerCase() == 'partnerotp'){
                 if(GlobalOtp != parseInt(otp)){
@@ -508,6 +526,13 @@
 				}
 			});
 
+
+            //paidgrp:GRP1iped2p093cme0
+            //paidseg:SEG8jtr2wwqnne1d1746615195237
+
+            //partnergrp:GRP1iped2p093cme0
+            //partnerseg:SEGvqhkwzu90rr501746776094352
+
             //Second: Submit to your API
             $.ajax({
                 url: 'https://platformapi.teleforce.in/api/v1/api/createlead/181743',
@@ -519,11 +544,13 @@
                     mobile: whatsappNumber,
                     city: city,
                     source:"website",
-                    usergroupid: "GRP1iped2p093cme0", 
-                    segmentid: "SEG8jtr2wwqnne1d1746615195237", 
+                    usergroupid: usergrpid, 
+                    segmentid: segid,  
                     otherparams: [
-                        { "meta_key": "lead_name", "meta_value": "SU_2025_EDXSO_DIGITAL" },
-                        { "meta_key": "convenient_time", "meta_value": connectTime }
+                        { "meta_key": "convenient_time", "meta_value": connectTime },
+                        { "meta_key": "utm_source", "meta_value": utm_source },
+                        { "meta_key": "utm_medium", "meta_value": utm_medium },
+                        { "meta_key": "utm_campaign", "meta_value": utm_campaign } 
                     ]
                 }),
                 success: function (response) {
