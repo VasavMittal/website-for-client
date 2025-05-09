@@ -1666,8 +1666,8 @@
         const utmMedium = urlParams.get('utm_medium') ?? '';
         const utmCampaign = urlParams.get('utm_campaign') ?? '';
         sessionStorage.setItem('utm_source', utmSource);
-        sessionStorage.setItem('utm_source', utmMedium);
-        sessionStorage.setItem('utm_source', utmCampaign);
+        sessionStorage.setItem('utm_medium', utmMedium);
+        sessionStorage.setItem('utm_campaign', utmCampaign);
         sessionStorage.setItem('url', fullUrl);
         if(utmSource && utmSource.toLowerCase() == 'partnerotp'){
             $('#SecondFormSubmitApplication').prop('disabled', true);
