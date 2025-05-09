@@ -223,6 +223,8 @@
             let connectTime = $("#connectTime").val();
             let url = sessionStorage.getItem("url");
             let utm_source = sessionStorage.getItem('utm_source');
+            let utm_medium = sessionStorage.getItem('utm_medium');
+            let utm_campaign = sessionStorage.getItem('utm_campaign');
             let otp = $("#otpPopup").val().trim();
            
 
@@ -296,8 +298,11 @@
                     city: city,
                     address: "address", // Replace with actual address if available
                     otherparams: [
-                        { "meta_key": "lead_name", "meta_value": "SU_2025_EDXSO_DIGITAL" },
-                        { "meta_key": "convenient_time", "meta_value": connectTime }
+                        { "meta_key": "convenient_time", "meta_value": connectTime },
+                        { "meta_key": "utm_source", "meta_value": utm_source },
+                        { "meta_key": "utm_medium", "meta_value": utm_medium },
+                        { "meta_key": "utm_campaign", "meta_value": utm_campaign }
+                        
                     ]
                 }),
                 success: function (response) {
@@ -327,6 +332,8 @@
             let connectTime = $("#mainFormTime").val();
             let url = sessionStorage.getItem("url");
             let utm_source = sessionStorage.getItem('utm_source');
+            let utm_medium = sessionStorage.getItem('utm_medium');
+            let utm_campaign = sessionStorage.getItem('utm_campaign');
             let otp = $("#otpField").val().trim();
            
 
@@ -400,9 +407,11 @@
                     mobile: whatsappNumber,
                     city: city,
                     address: "address", // Replace with actual address if available
-                    otherparams: [
-                        { "meta_key": "lead_name", "meta_value": "SU_2025_EDXSO_DIGITAL" },
-                        { "meta_key": "convenient_time", "meta_value": connectTime }
+                    otherparams: [                        
+                        { "meta_key": "convenient_time", "meta_value": connectTime },
+                        { "meta_key": "utm_source", "meta_value": utm_source },
+                        { "meta_key": "utm_medium", "meta_value": utm_medium },
+                        { "meta_key": "utm_campaign", "meta_value": utm_campaign }       
                     ]
                 }),
                 success: function (response) {
@@ -431,6 +440,8 @@
             let connectTime = $("#secondFormTime").val();
             let url = sessionStorage.getItem("url");
             let utm_source = sessionStorage.getItem('utm_source');
+            let utm_medium = sessionStorage.getItem('utm_medium');
+            let utm_campaign = sessionStorage.getItem('utm_campaign');
             let otp = $("#otpSecondField").val().trim();
            
 

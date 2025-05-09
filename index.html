@@ -1662,8 +1662,12 @@
     function getUTMParameters() {
         let fullUrl = window.location.href;
         const urlParams = new URLSearchParams(window.location.search);
-        const utmSource = urlParams.get('utm_source');
+        const utmSource = urlParams.get('utm_source') ?? '';
+        const utmMedium = urlParams.get('utm_medium') ?? '';
+        const utmCampaign = urlParams.get('utm_campaign') ?? '';
         sessionStorage.setItem('utm_source', utmSource);
+        sessionStorage.setItem('utm_source', utmMedium);
+        sessionStorage.setItem('utm_source', utmCampaign);
         sessionStorage.setItem('url', fullUrl);
         if(utmSource && utmSource.toLowerCase() != 'partnerotp'){
             $('.sendOtpBtn').css("display", "none");
