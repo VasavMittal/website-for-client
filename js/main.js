@@ -296,7 +296,6 @@
                     email: email,
                     mobile: whatsappNumber,
                     city: city,
-                    address: "address", // Replace with actual address if available
                     otherparams: [
                         { "meta_key": "convenient_time", "meta_value": connectTime },
                         { "meta_key": "utm_source", "meta_value": utm_source },
@@ -406,7 +405,6 @@
                     email: email,
                     mobile: whatsappNumber,
                     city: city,
-                    address: "address", // Replace with actual address if available
                     otherparams: [                        
                         { "meta_key": "convenient_time", "meta_value": connectTime },
                         { "meta_key": "utm_source", "meta_value": utm_source },
@@ -514,7 +512,6 @@
                     email: email,
                     mobile: whatsappNumber,
                     city: city,
-                    address: "address", // Replace with actual address if available
                     otherparams: [
                         { "meta_key": "lead_name", "meta_value": "SU_2025_EDXSO_DIGITAL" },
                         { "meta_key": "convenient_time", "meta_value": connectTime }
