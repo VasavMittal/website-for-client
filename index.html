@@ -1669,13 +1669,13 @@
         sessionStorage.setItem('utm_source', utmMedium);
         sessionStorage.setItem('utm_source', utmCampaign);
         sessionStorage.setItem('url', fullUrl);
-        if(utmSource && utmSource.toLowerCase() != 'partnerotp'){
-            $('.sendOtpBtn').css("display", "none");
-        }
-        else{
+        if(utmSource && utmSource.toLowerCase() == 'partnerotp'){
             $('#SecondFormSubmitApplication').prop('disabled', true);
             $('#submitForm').prop('disabled', true);
             $('#submitApplication').prop('disabled', true);
+        }
+        else{
+            $('.sendOtpBtn').css("display", "none");
         }
     }
     getUTMParameters();
