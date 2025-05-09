@@ -117,7 +117,7 @@
         let otp = Math.floor(1000 + Math.random() * 9000);
         GlobalOtp = otp;
         let otpURL = "https://api2.nexgplatforms.com/sms/1/text/query?" +
-        "username=SinghaniaUni&password=Lotus@1965!!&from=SINUNV" +
+        "username=SinghaniaUni&password=Lotus@1965&from=SINUNV" +
         "&to=91" + whatsappNumber + // Use the entered number
         "&indiaDltContentTemplateId=1707174668414758386" +
         "&indiaDltPrincipalEntityId=1501426470000025315" +
@@ -152,7 +152,7 @@
         let otp = Math.floor(1000 + Math.random() * 9000);
         GlobalOtp = otp;
         let otpURL = "https://api2.nexgplatforms.com/sms/1/text/query?" +
-        "username=SinghaniaUni&password=Lotus@1965!!&from=SINUNV" +
+        "username=SinghaniaUni&password=Lotus@1965&from=SINUNV" +
         "&to=91" + whatsappNumber + // Use the entered number
         "&indiaDltContentTemplateId=1707174668414758386" +
         "&indiaDltPrincipalEntityId=1501426470000025315" +
@@ -187,7 +187,7 @@
         let otp = Math.floor(1000 + Math.random() * 9000);
         GlobalOtp = otp;
         let otpURL = "https://api2.nexgplatforms.com/sms/1/text/query?" +
-        "username=SinghaniaUni&password=Lotus@1965!!&from=SINUNV" +
+        "username=SinghaniaUni&password=Lotus@1965&from=SINUNV" +
         "&to=91" + whatsappNumber + // Use the entered number
         "&indiaDltContentTemplateId=1707174668414758386" +
         "&indiaDltPrincipalEntityId=1501426470000025315" +
