@@ -333,7 +333,7 @@
                     email: email,
                     mobile: whatsappNumber,
                     sourceName: utm_medium,
-                    campignName: utm_campaign
+                    campignName: utm_source
                 }),
                 success: function (response) {
                     console.log("Third API call successful", response);
@@ -471,7 +471,7 @@
                     email: email,
                     mobile: whatsappNumber,
                     sourceName: utm_medium,
-                    campignName: utm_campaign
+                    campignName: utm_source
 
                 }),
                 success: function (response) {
@@ -616,7 +616,8 @@
                     name: fullName,
                     email: email,
                     mobile: whatsappNumber,
-                    sourceName: utm_medium
+                    sourceName: utm_medium,
+                    campignName: utm_source
 
                 }),
                 success: function (response) {
